@@ -7,6 +7,7 @@
 :root {
   --primary: hsl(0, 100%, 95%);
   --gray: #2f3337;
+  --gray-light: rgb(192, 180, 180);
   --white-f: #f5f5f5;
   --main: hsl(0, 65%, 48%);
 
@@ -83,6 +84,8 @@ section header {
   margin-bottom: 2.4rem;
   border: 1px solid var(--white-f);
   border-radius: 0.5rem;
+
+  box-shadow: 0.03rem 0.03rem var(--gray-light);
 }
 
 .card img {
