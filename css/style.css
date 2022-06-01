@@ -49,8 +49,6 @@ h2 {
 
 h3 {
   font-size: 2.4rem;
-  
-
 }
 
 h4 {
@@ -58,8 +56,6 @@ h4 {
   font-weight: bold;
 
   text-transform: uppercase;
-
-
 }
 
 ul {
@@ -80,9 +76,7 @@ section header {
 
 .cards header {
   gap: 1rem;
-  margin-bottom: 2.4rem;
   text-align: center;
-
 }
 
 .card {
@@ -99,13 +93,15 @@ section header {
 
 .card p {
   margin-bottom: 2.4rem;
+
+  text-align: justify;
 }
 
 .content header {
   padding-block: 2.4rem;
 }
 
-.content-card {
+.content .card {
   padding-block: 2.4rem;
   padding-inline: 2rem;
 
@@ -121,7 +117,7 @@ section header {
 .content .card a {
   font-size: 1.2rem;
   font-weight: bold;
-  
+
   color: var(--main);
 
   text-transform: uppercase;
@@ -136,14 +132,12 @@ section header {
 nav#navigation .menu {
   display: flex;
   justify-content: end;
-  
+
   height: 5rem;
-  
+
   background-color: var(--main);
   padding-inline: 2.4rem;
   margin-block: auto;
-
-
 }
 
 nav#navigation .menu button {
@@ -154,19 +148,19 @@ nav#navigation .menu button {
 /*---------- HOME SECTION ----------*/
 
 #home {
-  
-  background-size: 102.4rem;
+  /* background-size: 102.4rem;
   height: 35%;
   
+  */
   text-align: center;
-
+  margin: 0;
 }
 
-#home .wrapper img {
+#home .wrapper {
   margin-top: 4.1rem;
 }
 
-#home .content-card {
+#home .content .card {
   color: var(--white-f);
   background-color: var(--gray);
 }
@@ -180,8 +174,6 @@ nav#navigation .menu button {
 }
 
 /*---------- VALORES SECTION ----------*/
-
-
 
 /*---------- OBRAS SECTION ----------*/
 
@@ -197,9 +189,7 @@ nav#navigation .menu button {
   object-position: 0 2rem 0.5rem;
 }
 
-
 /*---------- CLIENTES SECTION ----------*/
-
 
 #clientes header {
   margin-bottom: 2.4rem;
@@ -223,7 +213,6 @@ footer h2 {
 footer p {
   margin-inline: 2.4rem;
   padding-bottom: 2.4rem;
-  
 }
 
 footer header {
@@ -232,7 +221,6 @@ footer header {
   align-items: center;
 
   margin-inline: 2.4rem;
-  
 }
 
 footer .info ul {
@@ -249,4 +237,3 @@ footer .contato ul li {
   gap: 1rem;
   margin-inline: 2.4rem;
 }
-
