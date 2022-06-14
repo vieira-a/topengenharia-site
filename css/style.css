@@ -9,7 +9,7 @@
   --gray: #2f3337;
   --gray-light: rgb(192, 180, 180);
   --white-f: #f5f5f5;
-  --main: hsl(0, 65%, 48%);
+  --main: #ca2b2b;
 
   font-size: 62.5%;
 
@@ -69,7 +69,7 @@ img {
 }
 
 section {
-  padding-bottom: 16rem;
+  padding-bottom: 6rem;
 }
 
 section header {
@@ -135,40 +135,57 @@ section header {
 
 nav#navigation .menu {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
 
   height: var(--nav-height);
 
-  background-color: var(--main);
+  background-color: var(--white-f);
   padding-inline: 2.4rem;
   margin-block: auto;
 }
 
+.logo img {
+  margin-top: 0.5rem;
+  width: 50%;
+}
+
 nav#navigation .menu button {
   border: none;
-  background-color: var(--main);
+  background-color: var(--white-f);
 }
 
 /*---------- HOME SECTION ----------*/
 
+/*
 #home {
   position: relative;
 
-  /* background-size: 102.4rem;
+   background-size: 102.4rem;
   height: 35%;
   
-  */
+  
   height: 60rem;
 
   background-image: url(/assets/img/home_banner.png);
 }
+*/
 
-#home .logo {
-  position: absolute;
-  bottom: 4.1rem;
-  left: 37%;
+/* Logo center slide
+#home {
+  position: relative;
 }
 
+#home .logo {
+  width: 20%;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translateX(-50%);
+  
+  z-index: 1;
+  
+ }
+ */
 #home .content .card {
   color: var(--white-f);
   background-color: var(--gray);
