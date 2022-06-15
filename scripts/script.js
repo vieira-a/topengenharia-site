@@ -32,3 +32,37 @@ window.onload = () => {
     checkCookie();
   }, 2000);
 };
+
+/* function readMore() {
+  const breakpoint = document.getElementById("break-point");
+  const textmore = document.getElementById("read-more");
+  const btnreadmore = document.getElementById("btn-readmore");
+
+  if (breakpoint.style.display == "none") {
+    breakpoint.style.display = "inline";
+    textmore.style.display = "none";
+    btnreadmore.innerHTML = "Leia mais";
+  }else{
+    breakpoint.style.display = "none";
+    textmore.style.display = "inline";
+    btnreadmore.innerHTML = "Leia menos";
+  }
+} */
+
+function readMore(data) {
+  let breakpoint = document.querySelector(`.content-card[data-card="${data}"] .break-point`);
+  let textmore = document.querySelector(`.content-card[data-card="${data}"] .read-more`);
+  let btnreadmore = document.querySelector(`.content-card[data-card="${data}"] .btn-readmore`);
+
+
+  if (breakpoint.style.display === "none") {
+    breakpoint.style.display = "inline";
+    textmore.style.display = "none";
+    btnreadmore.innerHTML = "Leia mais";
+  }else{
+    breakpoint.style.display = "none";
+    textmore.style.display = "inline";
+    btnreadmore.innerHTML = "Leia menos";
+  }
+}
+

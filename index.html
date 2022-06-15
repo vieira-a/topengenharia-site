@@ -114,7 +114,7 @@
               <div class="img-card">
                 <img src="assets/img/qualidade.jpg" alt="" />
               </div>
-              <div class="content-card">
+              <div class="content-card" data-card="qualidade">
                 <header>
                   <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20.87 17.25L18.16 12.57C18.7145 11.5515 19.0034 10.4097 19 9.25C19 7.39348 18.2625 5.61301 16.9497 4.30025C15.6369 2.9875 13.8565 2.25 12 2.25C10.1434 2.25 8.36296 2.9875 7.0502 4.30025C5.73745 5.61301 4.99995 7.39348 4.99995 9.25C4.99651 10.4097 5.28541 11.5515 5.83995 12.57L3.12995 17.25C3.04201 17.4023 2.9958 17.5751 2.99597 17.751C2.99615 17.9269 3.0427 18.0996 3.13094 18.2517C3.21918 18.4039 3.34598 18.53 3.49856 18.6175C3.65113 18.705 3.82408 18.7507 3.99995 18.75H6.86995L8.32995 21.21C8.37917 21.2915 8.43978 21.3656 8.50995 21.43C8.69533 21.6087 8.94248 21.709 9.19995 21.71H9.33995C9.49092 21.6893 9.63517 21.6345 9.76169 21.5495C9.88821 21.4646 9.99365 21.3519 10.07 21.22L12 17.9L13.93 21.25C14.0074 21.38 14.1133 21.4908 14.2398 21.5739C14.3662 21.6571 14.5099 21.7104 14.66 21.73H14.8C15.0609 21.7316 15.3121 21.6311 15.5 21.45C15.5672 21.3893 15.6246 21.3184 15.67 21.24L17.13 18.78H20C20.1762 18.7807 20.3494 18.7348 20.5022 18.647C20.655 18.5592 20.7818 18.4326 20.87 18.28C20.9634 18.1245 21.0128 17.9464 21.0128 17.765C21.0128 17.5836 20.9634 17.4055 20.87 17.25ZM9.18995 18.78L8.29995 17.29C8.21231 17.1422 8.08806 17.0194 7.93917 16.9336C7.79029 16.8478 7.6218 16.8018 7.44995 16.8H5.71995L7.14995 14.32C8.13468 15.2689 9.37577 15.9085 10.72 16.16L9.18995 18.78ZM12 14.25C11.011 14.25 10.0443 13.9568 9.2221 13.4073C8.39985 12.8579 7.75899 12.077 7.38055 11.1634C7.00212 10.2498 6.9031 9.24445 7.09602 8.27455C7.28895 7.30464 7.76515 6.41373 8.46442 5.71447C9.16368 5.0152 10.0546 4.539 11.0245 4.34607C11.9944 4.15315 12.9997 4.25216 13.9134 4.6306C14.827 5.00904 15.6079 5.6499 16.1573 6.47215C16.7067 7.29439 17 8.26109 17 9.25C17 10.5761 16.4732 11.8479 15.5355 12.7855C14.5978 13.7232 13.326 14.25 12 14.25ZM16.55 16.8C16.3781 16.8018 16.2096 16.8478 16.0607 16.9336C15.9118 17.0194 15.7876 17.1422 15.7 17.29L14.81 18.78L13.29 16.13C14.6294 15.8734 15.8659 15.2343 16.85 14.29L18.28 16.77L16.55 16.8Z" fill="#2f3337"/>
@@ -123,9 +123,17 @@
                   <h3>Qualidade</h3>
                 </header>
                 <p>
-                  A garantia da qualidade é um compromisso constante de todos os colaboradores da empresa, visando a melhoria contínua dos nossos serviços de obras civis pela busca total da satisfação de nossos clientes.
+                  A garantia da qualidade é um compromisso constante de todos os colaboradores da empresa, visando a melhoria contínua dos nossos serviços de obras civis pela busca total da satisfação de nossos clientes<span class="break-point">...</span><span class="read-more"> através de medidas eficazes de preservação ao meio ambiente e na valorização da saúde e segurança, capacitação e treinamento dos nossos colaboradores, conquistando novos mercados, reduzindo nossos custos operacionais.<br>
+                  É nosso objetivo:<br><br>
+                  - Capacitar, treinar e motivar os nossos colaboradores quanto às questões referentes ao SGI e reduzir os riscos a sua saúde e segurança;<br>
+                  - Buscar a satisfação dos nossos clientes internos e externos;<br>
+                  - Padronizar os processos da empresa, visando à melhoria contínua dos nossos serviços, reduzindo a poluição, observando a preservação ambiental, a saúde e segurança dos nossos colaboradores;<br>
+                  - Atender à Legislação Ambiental e a relativa à saúde e segurança do trabalho e demais normas aplicáveis;<br>
+                  - Conquistar novos mercados;<br>
+                  - Reduzir os custos operacionais.
+                  </span>
                 </p>
-                <a href="#">Leia mais</a>
+                <button onclick="readMore('qualidade')" class="btn-readmore">Leia mais</button>
               </div>
             </div>
     
@@ -133,7 +141,7 @@
               <div class="img-card">
                 <img src="assets/img/gestao_ambiental.jpg" alt="" />
               </div>
-              <div class="content-card">
+              <div class="content-card" data-card="meioambiente">
                 <header>
                   <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14.2899 14.1901L10.9999 17.4801L9.70994 16.1901C9.61698 16.0964 9.50638 16.022 9.38452 15.9712C9.26266 15.9205 9.13195 15.8943 8.99994 15.8943C8.86793 15.8943 8.73722 15.9205 8.61537 15.9712C8.49351 16.022 8.38291 16.0964 8.28994 16.1901C8.10369 16.3775 7.99915 16.631 7.99915 16.8951C7.99915 17.1593 8.10369 17.4128 8.28994 17.6001L10.2899 19.6001C10.3829 19.6939 10.4935 19.7683 10.6154 19.819C10.7372 19.8698 10.8679 19.8959 10.9999 19.8959C11.132 19.8959 11.2627 19.8698 11.3845 19.819C11.5064 19.7683 11.617 19.6939 11.7099 19.6001L15.7099 15.6001C15.8962 15.4128 16.0007 15.1593 16.0007 14.8951C16.0007 14.631 15.8962 14.3775 15.7099 14.1901C15.617 14.0964 15.5064 14.022 15.3845 13.9712C15.2627 13.9205 15.132 13.8943 14.9999 13.8943C14.8679 13.8943 14.7372 13.9205 14.6154 13.9712C14.4935 14.022 14.3829 14.0964 14.2899 14.1901ZM18.4199 8.32014C17.8083 6.91595 16.7529 5.75114 15.4157 5.0043C14.0785 4.25746 12.5332 3.96981 11.0168 4.18546C9.50044 4.40112 8.09664 5.10816 7.02066 6.1982C5.94468 7.28824 5.2559 8.70109 5.05994 10.2201C4.22593 10.4271 3.48073 10.8971 2.93468 11.5606C2.38863 12.224 2.07075 13.0457 2.02812 13.904C1.98549 14.7622 2.22037 15.6114 2.69798 16.3257C3.17559 17.04 3.87055 17.5816 4.67994 17.8701C4.80767 17.9372 4.94839 17.9758 5.09245 17.9833C5.2365 17.9908 5.38048 17.9671 5.51449 17.9137C5.64851 17.8604 5.7694 17.7786 5.86886 17.6742C5.96833 17.5697 6.04401 17.4449 6.09072 17.3085C6.13743 17.172 6.15406 17.027 6.13946 16.8835C6.12487 16.74 6.07941 16.6013 6.00619 16.477C5.93297 16.3528 5.83373 16.2458 5.71527 16.1635C5.59682 16.0812 5.46196 16.0254 5.31994 16.0001C4.93017 15.8592 4.5938 15.6007 4.35734 15.2604C4.12087 14.92 3.99598 14.5146 3.99994 14.1001C3.99994 13.5697 4.21066 13.061 4.58573 12.6859C4.9608 12.3109 5.46951 12.1001 5.99994 12.1001C6.26516 12.1001 6.51951 11.9948 6.70705 11.8072C6.89458 11.6197 6.99994 11.3654 6.99994 11.1001C7.00484 9.91827 7.42823 8.77634 8.19501 7.87696C8.96179 6.97757 10.0224 6.37888 11.1886 6.18711C12.3548 5.99534 13.5513 6.22288 14.5657 6.82937C15.5801 7.43585 16.3468 8.38207 16.7299 9.50014C16.7886 9.67012 16.892 9.82113 17.0293 9.93728C17.1666 10.0534 17.3326 10.1304 17.5099 10.1601C18.176 10.286 18.7798 10.6337 19.223 11.1467C19.6661 11.6596 19.9225 12.3075 19.9503 12.9848C19.9782 13.6621 19.7758 14.3288 19.3762 14.8764C18.9767 15.4239 18.4034 15.82 17.7499 16.0001C17.4847 16.0333 17.2435 16.1704 17.0794 16.3814C16.9154 16.5924 16.8418 16.8599 16.8749 17.1251C16.9081 17.3904 17.0452 17.6315 17.2562 17.7956C17.4672 17.9597 17.7347 18.0333 17.9999 18.0001H18.2499C19.3023 17.7221 20.2352 17.1081 20.9069 16.2516C21.5787 15.3951 21.9525 14.3427 21.9718 13.2544C21.991 12.1661 21.6546 11.1012 21.0135 10.2215C20.3725 9.34174 19.4618 8.69524 18.4199 8.38014V8.32014Z" fill="#2f3337"/>
@@ -142,9 +150,19 @@
                   <h3>Meio ambiente</h3>
                 </header>
                 <p>
-                  A TOP Engenharia tem desenvolvido um conjunto de atitudes com foco no desenvolvimento sustentável do planeta.
+                  A TOP Engenharia tem desenvolvido um conjunto de atitudes com foco no desenvolvimento sustentável do planeta.<span class="break-point">...</span><span class="read-more"> Estas atitudes levam em consideração o crescimento econômico ajustado à proteção do meio ambiente na atualidade e para as gerações futuras, garantindo assim a sustentabilidade do nosso planeta.<br><br>
+                  Abaixo algumas ações que a TOP Engenharia está e estará adotando para atingir este intuito:<br><br>
+                  - Utilização do sistema de coleta seletiva de lixo;<br>
+                  - Realização de treinamentos informativos para os funcionários quanto a importância da sustentabilidade;<br>
+                  - Dar preferência para a compra de produtos de empresas que também sigam os princípios da sustentabilidade;<br>
+                  - Utilizar, sempre que possível, fontes de energia limpas e renováveis em nosso processo operacional;<br>
+                  - Nunca adotar ações que possam provocar danos ao meio ambiente, como por exemplo, poluição de rios e desmatamento;<br>
+                  - Promover a economia de energia elétrica e o consumo de água em todas as unidades da TOP Engenharia;<br>
+                  - Utilização de tecnologias que visem diminuir o volume de impressões e conseqüentemente o volume de papéis utilizados;<br>
+                  - Substituição dos copos plásticos descartáveis por canecas confeccionadas com materiais reciclados.
+                  </span>
                 </p>
-                <a href="#">Leia mais</a>
+                <button onclick="readMore('meioambiente')" class="btn-readmore">Leia mais</button>
               </div>
             </div>
     
@@ -152,7 +170,7 @@
               <div class="img-card">
                 <img src="assets/img/seguranca.jpg" alt="" />
               </div>
-              <div class="content-card">
+              <div class="content-card" data-card="seguranca">
                 <header>
                   <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M19.63 3.65031C19.5138 3.55633 19.3781 3.48958 19.2327 3.45497C19.0873 3.42036 18.9361 3.41877 18.79 3.45031C17.7214 3.67425 16.6183 3.67711 15.5486 3.45869C14.4789 3.24028 13.4653 2.80522 12.57 2.18031C12.4026 2.06418 12.2037 2.00195 12 2.00195C11.7963 2.00195 11.5974 2.06418 11.43 2.18031C10.5348 2.80522 9.52108 3.24028 8.45137 3.45869C7.38166 3.67711 6.27857 3.67425 5.21001 3.45031C5.06394 3.41877 4.91267 3.42036 4.76731 3.45497C4.62194 3.48958 4.48618 3.55633 4.37001 3.65031C4.25399 3.74443 4.16053 3.86334 4.0965 3.99832C4.03247 4.1333 3.9995 4.28091 4.00001 4.43031V11.8803C3.99912 13.3141 4.34078 14.7273 4.99654 16.0023C5.6523 17.2773 6.60319 18.3771 7.77001 19.2103L11.42 21.8103C11.5894 21.9309 11.7921 21.9957 12 21.9957C12.2079 21.9957 12.4106 21.9309 12.58 21.8103L16.23 19.2103C17.3968 18.3771 18.3477 17.2773 19.0035 16.0023C19.6592 14.7273 20.0009 13.3141 20 11.8803V4.43031C20.0005 4.28091 19.9675 4.1333 19.9035 3.99832C19.8395 3.86334 19.746 3.74443 19.63 3.65031ZM18 11.8803C18.0008 12.9951 17.7353 14.0939 17.2257 15.0853C16.716 16.0768 15.977 16.9322 15.07 17.5803L12 19.7703L8.93001 17.5803C8.02304 16.9322 7.28399 16.0768 6.77435 15.0853C6.26472 14.0939 5.99924 12.9951 6.00001 11.8803V5.58031C8.09643 5.75974 10.196 5.27333 12 4.19031C13.804 5.27333 15.9036 5.75974 18 5.58031V11.8803ZM13.54 9.59031L10.85 12.2903L9.96001 11.3903C9.7717 11.202 9.51631 11.0962 9.25001 11.0962C8.9837 11.0962 8.72831 11.202 8.54001 11.3903C8.3517 11.5786 8.24591 11.834 8.24591 12.1003C8.24591 12.3666 8.3517 12.622 8.54001 12.8103L10.14 14.4103C10.233 14.504 10.3436 14.5784 10.4654 14.6292C10.5873 14.68 10.718 14.7061 10.85 14.7061C10.982 14.7061 11.1127 14.68 11.2346 14.6292C11.3564 14.5784 11.467 14.504 11.56 14.4103L15 11.0003C15.1883 10.812 15.2941 10.5566 15.2941 10.2903C15.2941 10.024 15.1883 9.76861 15 9.58031C14.8117 9.392 14.5563 9.28622 14.29 9.28622C14.0237 9.28622 13.7683 9.392 13.58 9.58031L13.54 9.59031Z" fill="#2f3337"/>
@@ -161,9 +179,18 @@
                   <h3>Segurança</h3>
                 </header>
                 <p>
-                  A saúde e segurança são partes indissociáveis em todas as atividades que fazem parte das obras da Top Engenharia. 
+                  A saúde e segurança são partes indissociáveis em todas as atividades que fazem parte das obras da Top Engenharia.<span class="break-point">...</span><span class="read-more"> A Alta Administração se preocupa em destacar de forma especial a saúde e segurança de seus funcionários. Procedimentos, programas e campanhas visando a promoção da saúde e segurança são elaborados e implementados em todas as obras da empresa com o objetivo de reduzir o índice de acidentes, associando com idéia que todos os acidentes podem ser evitados. Levantamento de risco também são realizados antes da instalação dos canteiros para elaboração do PCMAT, PPRA e PCMSO.<br><br>
+                  Podemos destacar alguns pontos que a empresa julga importantes na área de saúde e segurança:<br><br>
+                  - Elaboração de O.S. (Ordem de Serviço);<br>
+                  - Realização de Integração dos funcionários no momento da admissão;<br>
+                  - Formação dos SESMT's nas obras;<br>
+                  - Elaboração do Book de EPI x Função;<br>
+                  - Fornecimento de EPI's pata todos os funcionários;<br>
+                  - Formação da CIPA;<br>
+                  - Especificação de Certificado de Aprovação para todos os EPI's.
+                  </span> 
                 </p>
-                <a href="#">Leia mais</a>
+                <button onclick="readMore('seguranca')" class="btn-readmore">Leia mais</button>
               </div>
             </div>
           </div>
@@ -393,9 +420,9 @@
     <div id="cookiePopup" class="hide">
       <!-- <img src="cookie.png" /> -->
       <p>
-        Nosso site utiliza cookies para fornecer uma melhor experiência com a navegação e informações relevantes. Antes de continuar, você precisa aceitar a nossa <a href="#">Política de privacidade.</a>
+        Conheça a nossa <a href="#">Política de privacidade.</a> de acordo com a Lei Geral de Proteção de Dados (LGPD).
       </p>
-      <button id="acceptCookie">Aceitar</button>
+      <button id="acceptCookie">Fechar</button>
     </div>
 
     <script src="/scripts/script.js"></script>
