@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <title>Top Engenharia</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!--
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,51 +23,185 @@
     />
     -->
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/style.css" />
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav id="navigation">
-      <div class="menu">
-        <div class="logo">
-          <img src="/assets/img/logo.png" alt="Logomarca Top Engenharia" />
+      <div class="wrapper">
+        <a class="logo" href="#home">
+          <img src="/assets/img/logo.png" alt="Logomarca da Top Engenharia" />
+        </a>
+
+        <div class="menu">
+          <ul>
+            <li><a onclick="closeMenu()" href="#home">Início</a></li>
+            <li><a onclick="closeMenu()" href="#valores">Sobre</a></li>
+            <li><a onclick="closeMenu()" href="#obras">Obras</a></li>
+            <li><a onclick="closeMenu()" href="#clientes">Clientes</a></li>
+            <li><a onclick="closeMenu()" href="#about">Contato</a></li>
+          </ul>
+          <a
+            class="button"
+            onclick="closeMenu()"
+            href="https://webmail-seguro.com.br/topengenharia.com.br"
+            target="_blank"
+            >Webmail</a
+          >
+          <ul class="social-links">
+            <li>
+              <a target="_blank" href="#">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17 1.99997H7C4.23858 1.99997 2 4.23855 2 6.99997V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V6.99997C22 4.23855 19.7614 1.99997 17 1.99997Z"
+                    stroke="#FFFAF1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15.9997 11.3701C16.1231 12.2023 15.981 13.0523 15.5935 13.7991C15.206 14.5459 14.5929 15.1515 13.8413 15.5297C13.0898 15.908 12.2382 16.0397 11.4075 15.906C10.5768 15.7723 9.80947 15.3801 9.21455 14.7852C8.61962 14.1903 8.22744 13.4229 8.09377 12.5923C7.96011 11.7616 8.09177 10.91 8.47003 10.1584C8.84829 9.40691 9.45389 8.7938 10.2007 8.4063C10.9475 8.0188 11.7975 7.87665 12.6297 8.00006C13.4786 8.12594 14.2646 8.52152 14.8714 9.12836C15.4782 9.73521 15.8738 10.5211 15.9997 11.3701Z"
+                    stroke="#FFFAF1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17.5 6.49997H17.51"
+                    stroke="#FFFAF1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a target="_blank" href="#">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18 1.99997H15C13.6739 1.99997 12.4021 2.52675 11.4645 3.46444C10.5268 4.40212 10 5.67389 10 6.99997V9.99997H7V14H10V22H14V14H17L18 9.99997H14V6.99997C14 6.73475 14.1054 6.4804 14.2929 6.29286C14.4804 6.10533 14.7348 5.99997 15 5.99997H18V1.99997Z"
+                    stroke="#FFFAF1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a target="_blank" href="#">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22.5396 6.42C22.4208 5.94541 22.1789 5.51057 21.8382 5.15941C21.4976 4.80824 21.0703 4.55318 20.5996 4.42C18.8796 4 11.9996 4 11.9996 4C11.9996 4 5.1196 4 3.3996 4.46C2.92884 4.59318 2.50157 4.84824 2.16094 5.19941C1.82031 5.55057 1.57838 5.98541 1.4596 6.46C1.14481 8.20556 0.990831 9.97631 0.999595 11.75C0.988374 13.537 1.14236 15.3213 1.4596 17.08C1.59055 17.5398 1.8379 17.9581 2.17774 18.2945C2.51758 18.6308 2.93842 18.8738 3.3996 19C5.1196 19.46 11.9996 19.46 11.9996 19.46C11.9996 19.46 18.8796 19.46 20.5996 19C21.0703 18.8668 21.4976 18.6118 21.8382 18.2606C22.1789 17.9094 22.4208 17.4746 22.5396 17C22.852 15.2676 23.0059 13.5103 22.9996 11.75C23.0108 9.96295 22.8568 8.1787 22.5396 6.42Z"
+                    stroke="#FFFAF1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9.75 15.02L15.5 11.75L9.75 8.48001V15.02Z"
+                    stroke="#FFFAF1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
-          <button class="open-menu">
-            <svg
-              width="40"
-              height="40"
-              viewBox="0 0 40 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M10 20H30"
-                stroke="#ca2b2b"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M10 12H30"
-                stroke="#ca2b2b"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M18 28L30 28"
-                stroke="#ca2b2b"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
+
+        <button
+          aria-expanded="false"
+          aria-label="Abrir menu"
+          class="open-menu"
+          onclick="openMenu()"
+        >
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 20H30"
+              stroke="#ca2b2b"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M10 12H30"
+              stroke="#ca2b2b"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M18 28L30 28"
+              stroke="#ca2b2b"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+
+        <button
+          aria-expanded="true"
+          aria-label="Fechar menu"
+          class="close-menu"
+          onclick="closeMenu()"
+        >
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M9.29289 9.29289C9.68342 8.90237 10.3166 8.90237 10.7071 9.29289L20 18.5858L29.2929 9.29289C29.6834 8.90237 30.3166 8.90237 30.7071 9.29289C31.0976 9.68342 31.0976 10.3166 30.7071 10.7071L21.4142 20L30.7071 29.2929C31.0976 29.6834 31.0976 30.3166 30.7071 30.7071C30.3166 31.0976 29.6834 31.0976 29.2929 30.7071L20 21.4142L10.7071 30.7071C10.3166 31.0976 9.68342 31.0976 9.29289 30.7071C8.90237 30.3166 8.90237 29.6834 9.29289 29.2929L18.5858 20L9.29289 10.7071C8.90237 10.3166 8.90237 9.68342 9.29289 9.29289Z"
+              fill="#F5F5F5"
+            />
+          </svg>
+        </button>
       </div>
-    </div>
     </nav>
 
     <section id="home">
@@ -73,32 +210,58 @@
       </div> -->
       <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button
+            type="button"
+            data-bs-target="#homeCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#homeCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#homeCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="assets/img/img1.jpg" class="d-block w-100" alt="...">
+            <img src="assets/img/img1.jpg" class="d-block w-100" alt="..." />
           </div>
           <div class="carousel-item">
-            <img src="assets/img/img2.jpg" class="d-block w-100" alt="...">
+            <img src="assets/img/img2.jpg" class="d-block w-100" alt="..." />
           </div>
           <div class="carousel-item">
-            <img src="assets/img/img3.jpg" class="d-block w-100" alt="...">
+            <img src="assets/img/img3.jpg" class="d-block w-100" alt="..." />
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#homeCarousel"
+          data-bs-slide="prev"
+        >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#homeCarousel"
+          data-bs-slide="next"
+        >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      
-    </section>    
+    </section>
 
     <section id="valores">
       <div class="wrapper">
@@ -107,94 +270,175 @@
             <h2>Nossos valores</h2>
             <p>Impulsionam o nosso trabalho</p>
           </header>
-          
+
           <div class="cards">
-    
             <div class="card">
               <div class="img-card">
                 <img src="assets/img/qualidade.jpg" alt="" />
               </div>
               <div class="content-card" data-card="qualidade">
                 <header>
-                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M20.87 17.25L18.16 12.57C18.7145 11.5515 19.0034 10.4097 19 9.25C19 7.39348 18.2625 5.61301 16.9497 4.30025C15.6369 2.9875 13.8565 2.25 12 2.25C10.1434 2.25 8.36296 2.9875 7.0502 4.30025C5.73745 5.61301 4.99995 7.39348 4.99995 9.25C4.99651 10.4097 5.28541 11.5515 5.83995 12.57L3.12995 17.25C3.04201 17.4023 2.9958 17.5751 2.99597 17.751C2.99615 17.9269 3.0427 18.0996 3.13094 18.2517C3.21918 18.4039 3.34598 18.53 3.49856 18.6175C3.65113 18.705 3.82408 18.7507 3.99995 18.75H6.86995L8.32995 21.21C8.37917 21.2915 8.43978 21.3656 8.50995 21.43C8.69533 21.6087 8.94248 21.709 9.19995 21.71H9.33995C9.49092 21.6893 9.63517 21.6345 9.76169 21.5495C9.88821 21.4646 9.99365 21.3519 10.07 21.22L12 17.9L13.93 21.25C14.0074 21.38 14.1133 21.4908 14.2398 21.5739C14.3662 21.6571 14.5099 21.7104 14.66 21.73H14.8C15.0609 21.7316 15.3121 21.6311 15.5 21.45C15.5672 21.3893 15.6246 21.3184 15.67 21.24L17.13 18.78H20C20.1762 18.7807 20.3494 18.7348 20.5022 18.647C20.655 18.5592 20.7818 18.4326 20.87 18.28C20.9634 18.1245 21.0128 17.9464 21.0128 17.765C21.0128 17.5836 20.9634 17.4055 20.87 17.25ZM9.18995 18.78L8.29995 17.29C8.21231 17.1422 8.08806 17.0194 7.93917 16.9336C7.79029 16.8478 7.6218 16.8018 7.44995 16.8H5.71995L7.14995 14.32C8.13468 15.2689 9.37577 15.9085 10.72 16.16L9.18995 18.78ZM12 14.25C11.011 14.25 10.0443 13.9568 9.2221 13.4073C8.39985 12.8579 7.75899 12.077 7.38055 11.1634C7.00212 10.2498 6.9031 9.24445 7.09602 8.27455C7.28895 7.30464 7.76515 6.41373 8.46442 5.71447C9.16368 5.0152 10.0546 4.539 11.0245 4.34607C11.9944 4.15315 12.9997 4.25216 13.9134 4.6306C14.827 5.00904 15.6079 5.6499 16.1573 6.47215C16.7067 7.29439 17 8.26109 17 9.25C17 10.5761 16.4732 11.8479 15.5355 12.7855C14.5978 13.7232 13.326 14.25 12 14.25ZM16.55 16.8C16.3781 16.8018 16.2096 16.8478 16.0607 16.9336C15.9118 17.0194 15.7876 17.1422 15.7 17.29L14.81 18.78L13.29 16.13C14.6294 15.8734 15.8659 15.2343 16.85 14.29L18.28 16.77L16.55 16.8Z" fill="#2f3337"/>
-                    </svg>
-                    
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20.87 17.25L18.16 12.57C18.7145 11.5515 19.0034 10.4097 19 9.25C19 7.39348 18.2625 5.61301 16.9497 4.30025C15.6369 2.9875 13.8565 2.25 12 2.25C10.1434 2.25 8.36296 2.9875 7.0502 4.30025C5.73745 5.61301 4.99995 7.39348 4.99995 9.25C4.99651 10.4097 5.28541 11.5515 5.83995 12.57L3.12995 17.25C3.04201 17.4023 2.9958 17.5751 2.99597 17.751C2.99615 17.9269 3.0427 18.0996 3.13094 18.2517C3.21918 18.4039 3.34598 18.53 3.49856 18.6175C3.65113 18.705 3.82408 18.7507 3.99995 18.75H6.86995L8.32995 21.21C8.37917 21.2915 8.43978 21.3656 8.50995 21.43C8.69533 21.6087 8.94248 21.709 9.19995 21.71H9.33995C9.49092 21.6893 9.63517 21.6345 9.76169 21.5495C9.88821 21.4646 9.99365 21.3519 10.07 21.22L12 17.9L13.93 21.25C14.0074 21.38 14.1133 21.4908 14.2398 21.5739C14.3662 21.6571 14.5099 21.7104 14.66 21.73H14.8C15.0609 21.7316 15.3121 21.6311 15.5 21.45C15.5672 21.3893 15.6246 21.3184 15.67 21.24L17.13 18.78H20C20.1762 18.7807 20.3494 18.7348 20.5022 18.647C20.655 18.5592 20.7818 18.4326 20.87 18.28C20.9634 18.1245 21.0128 17.9464 21.0128 17.765C21.0128 17.5836 20.9634 17.4055 20.87 17.25ZM9.18995 18.78L8.29995 17.29C8.21231 17.1422 8.08806 17.0194 7.93917 16.9336C7.79029 16.8478 7.6218 16.8018 7.44995 16.8H5.71995L7.14995 14.32C8.13468 15.2689 9.37577 15.9085 10.72 16.16L9.18995 18.78ZM12 14.25C11.011 14.25 10.0443 13.9568 9.2221 13.4073C8.39985 12.8579 7.75899 12.077 7.38055 11.1634C7.00212 10.2498 6.9031 9.24445 7.09602 8.27455C7.28895 7.30464 7.76515 6.41373 8.46442 5.71447C9.16368 5.0152 10.0546 4.539 11.0245 4.34607C11.9944 4.15315 12.9997 4.25216 13.9134 4.6306C14.827 5.00904 15.6079 5.6499 16.1573 6.47215C16.7067 7.29439 17 8.26109 17 9.25C17 10.5761 16.4732 11.8479 15.5355 12.7855C14.5978 13.7232 13.326 14.25 12 14.25ZM16.55 16.8C16.3781 16.8018 16.2096 16.8478 16.0607 16.9336C15.9118 17.0194 15.7876 17.1422 15.7 17.29L14.81 18.78L13.29 16.13C14.6294 15.8734 15.8659 15.2343 16.85 14.29L18.28 16.77L16.55 16.8Z"
+                      fill="#2f3337"
+                    />
+                  </svg>
+
                   <h3>Qualidade</h3>
                 </header>
                 <p>
-                  A garantia da qualidade é um compromisso constante de todos os colaboradores da empresa, visando a melhoria contínua dos nossos serviços de obras civis pela busca total da satisfação de nossos clientes <span class="break-point">...</span><span class="read-more">através de medidas eficazes de preservação ao meio ambiente e na valorização da saúde e segurança, capacitação e treinamento dos nossos colaboradores, conquistando novos mercados, reduzindo nossos custos operacionais.<br><br>
-                  <strong>É nosso objetivo:</strong><br><br>
-                  &bull; Capacitar, treinar e motivar os nossos colaboradores quanto às questões referentes ao SGI e reduzir os riscos a sua saúde e segurança;<br>
-                  &bull; Buscar a satisfação dos nossos clientes internos e externos;<br>
-                  &bull; Padronizar os processos da empresa, visando à melhoria contínua dos nossos serviços, reduzindo a poluição, observando a preservação ambiental, a saúde e segurança dos nossos colaboradores;<br>
-                  &bull;<br>
-                  &bull; Conquistar novos mercados;<br>
-                  &bull; Reduzir os custos operacionais.
+                  A garantia da qualidade é um compromisso constante de todos os
+                  colaboradores da empresa, visando a melhoria contínua dos
+                  nossos serviços de obras civis pela busca total da satisfação
+                  de nossos clientes <span class="break-point">...</span
+                  ><span class="read-more"
+                    >através de medidas eficazes de preservação ao meio ambiente
+                    e na valorização da saúde e segurança, capacitação e
+                    treinamento dos nossos colaboradores, conquistando novos
+                    mercados, reduzindo nossos custos operacionais.<br /><br />
+                    <strong>É nosso objetivo:</strong><br /><br />
+                    &bull; Capacitar, treinar e motivar os nossos colaboradores
+                    quanto às questões referentes ao SGI e reduzir os riscos a
+                    sua saúde e segurança;<br />
+                    &bull; Buscar a satisfação dos nossos clientes internos e
+                    externos;<br />
+                    &bull; Padronizar os processos da empresa, visando à
+                    melhoria contínua dos nossos serviços, reduzindo a poluição,
+                    observando a preservação ambiental, a saúde e segurança dos
+                    nossos colaboradores;<br />
+                    &bull;<br />
+                    &bull; Conquistar novos mercados;<br />
+                    &bull; Reduzir os custos operacionais.
                   </span>
                 </p>
-                <button onclick="readMore('qualidade')" class="btn-readmore">Leia mais</button>
+                <button onclick="readMore('qualidade')" class="btn-readmore">
+                  Leia mais
+                </button>
               </div>
             </div>
-    
+
             <div class="card">
               <div class="img-card">
                 <img src="assets/img/gestao_ambiental.jpg" alt="" />
               </div>
               <div class="content-card" data-card="meioambiente">
                 <header>
-                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14.2899 14.1901L10.9999 17.4801L9.70994 16.1901C9.61698 16.0964 9.50638 16.022 9.38452 15.9712C9.26266 15.9205 9.13195 15.8943 8.99994 15.8943C8.86793 15.8943 8.73722 15.9205 8.61537 15.9712C8.49351 16.022 8.38291 16.0964 8.28994 16.1901C8.10369 16.3775 7.99915 16.631 7.99915 16.8951C7.99915 17.1593 8.10369 17.4128 8.28994 17.6001L10.2899 19.6001C10.3829 19.6939 10.4935 19.7683 10.6154 19.819C10.7372 19.8698 10.8679 19.8959 10.9999 19.8959C11.132 19.8959 11.2627 19.8698 11.3845 19.819C11.5064 19.7683 11.617 19.6939 11.7099 19.6001L15.7099 15.6001C15.8962 15.4128 16.0007 15.1593 16.0007 14.8951C16.0007 14.631 15.8962 14.3775 15.7099 14.1901C15.617 14.0964 15.5064 14.022 15.3845 13.9712C15.2627 13.9205 15.132 13.8943 14.9999 13.8943C14.8679 13.8943 14.7372 13.9205 14.6154 13.9712C14.4935 14.022 14.3829 14.0964 14.2899 14.1901ZM18.4199 8.32014C17.8083 6.91595 16.7529 5.75114 15.4157 5.0043C14.0785 4.25746 12.5332 3.96981 11.0168 4.18546C9.50044 4.40112 8.09664 5.10816 7.02066 6.1982C5.94468 7.28824 5.2559 8.70109 5.05994 10.2201C4.22593 10.4271 3.48073 10.8971 2.93468 11.5606C2.38863 12.224 2.07075 13.0457 2.02812 13.904C1.98549 14.7622 2.22037 15.6114 2.69798 16.3257C3.17559 17.04 3.87055 17.5816 4.67994 17.8701C4.80767 17.9372 4.94839 17.9758 5.09245 17.9833C5.2365 17.9908 5.38048 17.9671 5.51449 17.9137C5.64851 17.8604 5.7694 17.7786 5.86886 17.6742C5.96833 17.5697 6.04401 17.4449 6.09072 17.3085C6.13743 17.172 6.15406 17.027 6.13946 16.8835C6.12487 16.74 6.07941 16.6013 6.00619 16.477C5.93297 16.3528 5.83373 16.2458 5.71527 16.1635C5.59682 16.0812 5.46196 16.0254 5.31994 16.0001C4.93017 15.8592 4.5938 15.6007 4.35734 15.2604C4.12087 14.92 3.99598 14.5146 3.99994 14.1001C3.99994 13.5697 4.21066 13.061 4.58573 12.6859C4.9608 12.3109 5.46951 12.1001 5.99994 12.1001C6.26516 12.1001 6.51951 11.9948 6.70705 11.8072C6.89458 11.6197 6.99994 11.3654 6.99994 11.1001C7.00484 9.91827 7.42823 8.77634 8.19501 7.87696C8.96179 6.97757 10.0224 6.37888 11.1886 6.18711C12.3548 5.99534 13.5513 6.22288 14.5657 6.82937C15.5801 7.43585 16.3468 8.38207 16.7299 9.50014C16.7886 9.67012 16.892 9.82113 17.0293 9.93728C17.1666 10.0534 17.3326 10.1304 17.5099 10.1601C18.176 10.286 18.7798 10.6337 19.223 11.1467C19.6661 11.6596 19.9225 12.3075 19.9503 12.9848C19.9782 13.6621 19.7758 14.3288 19.3762 14.8764C18.9767 15.4239 18.4034 15.82 17.7499 16.0001C17.4847 16.0333 17.2435 16.1704 17.0794 16.3814C16.9154 16.5924 16.8418 16.8599 16.8749 17.1251C16.9081 17.3904 17.0452 17.6315 17.2562 17.7956C17.4672 17.9597 17.7347 18.0333 17.9999 18.0001H18.2499C19.3023 17.7221 20.2352 17.1081 20.9069 16.2516C21.5787 15.3951 21.9525 14.3427 21.9718 13.2544C21.991 12.1661 21.6546 11.1012 21.0135 10.2215C20.3725 9.34174 19.4618 8.69524 18.4199 8.38014V8.32014Z" fill="#2f3337"/>
-                    </svg>
-                    
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.2899 14.1901L10.9999 17.4801L9.70994 16.1901C9.61698 16.0964 9.50638 16.022 9.38452 15.9712C9.26266 15.9205 9.13195 15.8943 8.99994 15.8943C8.86793 15.8943 8.73722 15.9205 8.61537 15.9712C8.49351 16.022 8.38291 16.0964 8.28994 16.1901C8.10369 16.3775 7.99915 16.631 7.99915 16.8951C7.99915 17.1593 8.10369 17.4128 8.28994 17.6001L10.2899 19.6001C10.3829 19.6939 10.4935 19.7683 10.6154 19.819C10.7372 19.8698 10.8679 19.8959 10.9999 19.8959C11.132 19.8959 11.2627 19.8698 11.3845 19.819C11.5064 19.7683 11.617 19.6939 11.7099 19.6001L15.7099 15.6001C15.8962 15.4128 16.0007 15.1593 16.0007 14.8951C16.0007 14.631 15.8962 14.3775 15.7099 14.1901C15.617 14.0964 15.5064 14.022 15.3845 13.9712C15.2627 13.9205 15.132 13.8943 14.9999 13.8943C14.8679 13.8943 14.7372 13.9205 14.6154 13.9712C14.4935 14.022 14.3829 14.0964 14.2899 14.1901ZM18.4199 8.32014C17.8083 6.91595 16.7529 5.75114 15.4157 5.0043C14.0785 4.25746 12.5332 3.96981 11.0168 4.18546C9.50044 4.40112 8.09664 5.10816 7.02066 6.1982C5.94468 7.28824 5.2559 8.70109 5.05994 10.2201C4.22593 10.4271 3.48073 10.8971 2.93468 11.5606C2.38863 12.224 2.07075 13.0457 2.02812 13.904C1.98549 14.7622 2.22037 15.6114 2.69798 16.3257C3.17559 17.04 3.87055 17.5816 4.67994 17.8701C4.80767 17.9372 4.94839 17.9758 5.09245 17.9833C5.2365 17.9908 5.38048 17.9671 5.51449 17.9137C5.64851 17.8604 5.7694 17.7786 5.86886 17.6742C5.96833 17.5697 6.04401 17.4449 6.09072 17.3085C6.13743 17.172 6.15406 17.027 6.13946 16.8835C6.12487 16.74 6.07941 16.6013 6.00619 16.477C5.93297 16.3528 5.83373 16.2458 5.71527 16.1635C5.59682 16.0812 5.46196 16.0254 5.31994 16.0001C4.93017 15.8592 4.5938 15.6007 4.35734 15.2604C4.12087 14.92 3.99598 14.5146 3.99994 14.1001C3.99994 13.5697 4.21066 13.061 4.58573 12.6859C4.9608 12.3109 5.46951 12.1001 5.99994 12.1001C6.26516 12.1001 6.51951 11.9948 6.70705 11.8072C6.89458 11.6197 6.99994 11.3654 6.99994 11.1001C7.00484 9.91827 7.42823 8.77634 8.19501 7.87696C8.96179 6.97757 10.0224 6.37888 11.1886 6.18711C12.3548 5.99534 13.5513 6.22288 14.5657 6.82937C15.5801 7.43585 16.3468 8.38207 16.7299 9.50014C16.7886 9.67012 16.892 9.82113 17.0293 9.93728C17.1666 10.0534 17.3326 10.1304 17.5099 10.1601C18.176 10.286 18.7798 10.6337 19.223 11.1467C19.6661 11.6596 19.9225 12.3075 19.9503 12.9848C19.9782 13.6621 19.7758 14.3288 19.3762 14.8764C18.9767 15.4239 18.4034 15.82 17.7499 16.0001C17.4847 16.0333 17.2435 16.1704 17.0794 16.3814C16.9154 16.5924 16.8418 16.8599 16.8749 17.1251C16.9081 17.3904 17.0452 17.6315 17.2562 17.7956C17.4672 17.9597 17.7347 18.0333 17.9999 18.0001H18.2499C19.3023 17.7221 20.2352 17.1081 20.9069 16.2516C21.5787 15.3951 21.9525 14.3427 21.9718 13.2544C21.991 12.1661 21.6546 11.1012 21.0135 10.2215C20.3725 9.34174 19.4618 8.69524 18.4199 8.38014V8.32014Z"
+                      fill="#2f3337"
+                    />
+                  </svg>
+
                   <h3>Meio ambiente</h3>
                 </header>
                 <p>
-                  A TOP Engenharia tem desenvolvido um conjunto de atitudes com foco no desenvolvimento sustentável do planeta. <span class="break-point">...</span><span class="read-more">Estas atitudes levam em consideração o crescimento econômico ajustado à proteção do meio ambiente na atualidade e para as gerações futuras, garantindo assim a sustentabilidade do nosso planeta.<br><br>
-                  <strong>Abaixo algumas ações que a TOP Engenharia está e estará adotando para atingir este intuito:</strong><br><br>
-                  &bull; Utilização do sistema de coleta seletiva de lixo;<br>
-                  &bull; Realização de treinamentos informativos para os funcionários quanto a importância da sustentabilidade;<br>
-                  &bull; Dar preferência para a compra de produtos de empresas que também sigam os princípios da sustentabilidade;<br>
-                  &bull; Utilizar, sempre que possível, fontes de energia limpas e renováveis em nosso processo operacional;<br>
-                  &bull; Nunca adotar ações que possam provocar danos ao meio ambiente, como por exemplo, poluição de rios e desmatamento;<br>
-                  &bull; Promover a economia de energia elétrica e o consumo de água em todas as unidades da TOP Engenharia;<br>
-                  &bull; Utilização de tecnologias que visem diminuir o volume de impressões e conseqüentemente o volume de papéis utilizados;<br>
-                  &bull; Substituição dos copos plásticos descartáveis por canecas confeccionadas com materiais reciclados.
+                  A TOP Engenharia tem desenvolvido um conjunto de atitudes com
+                  foco no desenvolvimento sustentável do planeta.
+                  <span class="break-point">...</span
+                  ><span class="read-more"
+                    >Estas atitudes levam em consideração o crescimento
+                    econômico ajustado à proteção do meio ambiente na atualidade
+                    e para as gerações futuras, garantindo assim a
+                    sustentabilidade do nosso planeta.<br /><br />
+                    <strong
+                      >Abaixo algumas ações que a TOP Engenharia está e estará
+                      adotando para atingir este intuito:</strong
+                    ><br /><br />
+                    &bull; Utilização do sistema de coleta seletiva de lixo;<br />
+                    &bull; Realização de treinamentos informativos para os
+                    funcionários quanto a importância da sustentabilidade;<br />
+                    &bull; Dar preferência para a compra de produtos de empresas
+                    que também sigam os princípios da sustentabilidade;<br />
+                    &bull; Utilizar, sempre que possível, fontes de energia
+                    limpas e renováveis em nosso processo operacional;<br />
+                    &bull; Nunca adotar ações que possam provocar danos ao meio
+                    ambiente, como por exemplo, poluição de rios e
+                    desmatamento;<br />
+                    &bull; Promover a economia de energia elétrica e o consumo
+                    de água em todas as unidades da TOP Engenharia;<br />
+                    &bull; Utilização de tecnologias que visem diminuir o volume
+                    de impressões e conseqüentemente o volume de papéis
+                    utilizados;<br />
+                    &bull; Substituição dos copos plásticos descartáveis por
+                    canecas confeccionadas com materiais reciclados.
                   </span>
                 </p>
-                <button onclick="readMore('meioambiente')" class="btn-readmore">Leia mais</button>
+                <button onclick="readMore('meioambiente')" class="btn-readmore">
+                  Leia mais
+                </button>
               </div>
             </div>
-    
+
             <div class="card">
               <div class="img-card">
                 <img src="assets/img/seguranca.jpg" alt="" />
               </div>
               <div class="content-card" data-card="seguranca">
                 <header>
-                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19.63 3.65031C19.5138 3.55633 19.3781 3.48958 19.2327 3.45497C19.0873 3.42036 18.9361 3.41877 18.79 3.45031C17.7214 3.67425 16.6183 3.67711 15.5486 3.45869C14.4789 3.24028 13.4653 2.80522 12.57 2.18031C12.4026 2.06418 12.2037 2.00195 12 2.00195C11.7963 2.00195 11.5974 2.06418 11.43 2.18031C10.5348 2.80522 9.52108 3.24028 8.45137 3.45869C7.38166 3.67711 6.27857 3.67425 5.21001 3.45031C5.06394 3.41877 4.91267 3.42036 4.76731 3.45497C4.62194 3.48958 4.48618 3.55633 4.37001 3.65031C4.25399 3.74443 4.16053 3.86334 4.0965 3.99832C4.03247 4.1333 3.9995 4.28091 4.00001 4.43031V11.8803C3.99912 13.3141 4.34078 14.7273 4.99654 16.0023C5.6523 17.2773 6.60319 18.3771 7.77001 19.2103L11.42 21.8103C11.5894 21.9309 11.7921 21.9957 12 21.9957C12.2079 21.9957 12.4106 21.9309 12.58 21.8103L16.23 19.2103C17.3968 18.3771 18.3477 17.2773 19.0035 16.0023C19.6592 14.7273 20.0009 13.3141 20 11.8803V4.43031C20.0005 4.28091 19.9675 4.1333 19.9035 3.99832C19.8395 3.86334 19.746 3.74443 19.63 3.65031ZM18 11.8803C18.0008 12.9951 17.7353 14.0939 17.2257 15.0853C16.716 16.0768 15.977 16.9322 15.07 17.5803L12 19.7703L8.93001 17.5803C8.02304 16.9322 7.28399 16.0768 6.77435 15.0853C6.26472 14.0939 5.99924 12.9951 6.00001 11.8803V5.58031C8.09643 5.75974 10.196 5.27333 12 4.19031C13.804 5.27333 15.9036 5.75974 18 5.58031V11.8803ZM13.54 9.59031L10.85 12.2903L9.96001 11.3903C9.7717 11.202 9.51631 11.0962 9.25001 11.0962C8.9837 11.0962 8.72831 11.202 8.54001 11.3903C8.3517 11.5786 8.24591 11.834 8.24591 12.1003C8.24591 12.3666 8.3517 12.622 8.54001 12.8103L10.14 14.4103C10.233 14.504 10.3436 14.5784 10.4654 14.6292C10.5873 14.68 10.718 14.7061 10.85 14.7061C10.982 14.7061 11.1127 14.68 11.2346 14.6292C11.3564 14.5784 11.467 14.504 11.56 14.4103L15 11.0003C15.1883 10.812 15.2941 10.5566 15.2941 10.2903C15.2941 10.024 15.1883 9.76861 15 9.58031C14.8117 9.392 14.5563 9.28622 14.29 9.28622C14.0237 9.28622 13.7683 9.392 13.58 9.58031L13.54 9.59031Z" fill="#2f3337"/>
-                    </svg>
-                    
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.63 3.65031C19.5138 3.55633 19.3781 3.48958 19.2327 3.45497C19.0873 3.42036 18.9361 3.41877 18.79 3.45031C17.7214 3.67425 16.6183 3.67711 15.5486 3.45869C14.4789 3.24028 13.4653 2.80522 12.57 2.18031C12.4026 2.06418 12.2037 2.00195 12 2.00195C11.7963 2.00195 11.5974 2.06418 11.43 2.18031C10.5348 2.80522 9.52108 3.24028 8.45137 3.45869C7.38166 3.67711 6.27857 3.67425 5.21001 3.45031C5.06394 3.41877 4.91267 3.42036 4.76731 3.45497C4.62194 3.48958 4.48618 3.55633 4.37001 3.65031C4.25399 3.74443 4.16053 3.86334 4.0965 3.99832C4.03247 4.1333 3.9995 4.28091 4.00001 4.43031V11.8803C3.99912 13.3141 4.34078 14.7273 4.99654 16.0023C5.6523 17.2773 6.60319 18.3771 7.77001 19.2103L11.42 21.8103C11.5894 21.9309 11.7921 21.9957 12 21.9957C12.2079 21.9957 12.4106 21.9309 12.58 21.8103L16.23 19.2103C17.3968 18.3771 18.3477 17.2773 19.0035 16.0023C19.6592 14.7273 20.0009 13.3141 20 11.8803V4.43031C20.0005 4.28091 19.9675 4.1333 19.9035 3.99832C19.8395 3.86334 19.746 3.74443 19.63 3.65031ZM18 11.8803C18.0008 12.9951 17.7353 14.0939 17.2257 15.0853C16.716 16.0768 15.977 16.9322 15.07 17.5803L12 19.7703L8.93001 17.5803C8.02304 16.9322 7.28399 16.0768 6.77435 15.0853C6.26472 14.0939 5.99924 12.9951 6.00001 11.8803V5.58031C8.09643 5.75974 10.196 5.27333 12 4.19031C13.804 5.27333 15.9036 5.75974 18 5.58031V11.8803ZM13.54 9.59031L10.85 12.2903L9.96001 11.3903C9.7717 11.202 9.51631 11.0962 9.25001 11.0962C8.9837 11.0962 8.72831 11.202 8.54001 11.3903C8.3517 11.5786 8.24591 11.834 8.24591 12.1003C8.24591 12.3666 8.3517 12.622 8.54001 12.8103L10.14 14.4103C10.233 14.504 10.3436 14.5784 10.4654 14.6292C10.5873 14.68 10.718 14.7061 10.85 14.7061C10.982 14.7061 11.1127 14.68 11.2346 14.6292C11.3564 14.5784 11.467 14.504 11.56 14.4103L15 11.0003C15.1883 10.812 15.2941 10.5566 15.2941 10.2903C15.2941 10.024 15.1883 9.76861 15 9.58031C14.8117 9.392 14.5563 9.28622 14.29 9.28622C14.0237 9.28622 13.7683 9.392 13.58 9.58031L13.54 9.59031Z"
+                      fill="#2f3337"
+                    />
+                  </svg>
+
                   <h3>Segurança</h3>
                 </header>
                 <p>
-                  A saúde e segurança são partes indissociáveis em todas as atividades que fazem parte das obras da Top Engenharia. <span class="break-point">...</span><span class="read-more">A Alta Administração se preocupa em destacar de forma especial a saúde e segurança de seus funcionários. Procedimentos, programas e campanhas visando a promoção da saúde e segurança são elaborados e implementados em todas as obras da empresa com o objetivo de reduzir o índice de acidentes, associando com idéia que todos os acidentes podem ser evitados. Levantamento de risco também são realizados antes da instalação dos canteiros para elaboração do PCMAT, PPRA e PCMSO.<br><br>
-                  <strong>Podemos destacar alguns pontos que a empresa julga importantes na área de saúde e segurança:</strong><br><br>
-                  &bull; Elaboração de O.S. (Ordem de Serviço);<br>
-                  &bull; Realização de Integração dos funcionários no momento da admissão;<br>
-                  &bull; Formação dos SESMT's nas obras;<br>
-                  &bull; Elaboração do Book de EPI x Função;<br>
-                  &bull; Fornecimento de EPI's pata todos os funcionários;<br>
-                  &bull; Formação da CIPA;<br>
-                  &bull; Especificação de Certificado de Aprovação para todos os EPI's.
-                  </span> 
+                  A saúde e segurança são partes indissociáveis em todas as
+                  atividades que fazem parte das obras da Top Engenharia.
+                  <span class="break-point">...</span
+                  ><span class="read-more"
+                    >A Alta Administração se preocupa em destacar de forma
+                    especial a saúde e segurança de seus funcionários.
+                    Procedimentos, programas e campanhas visando a promoção da
+                    saúde e segurança são elaborados e implementados em todas as
+                    obras da empresa com o objetivo de reduzir o índice de
+                    acidentes, associando com idéia que todos os acidentes podem
+                    ser evitados. Levantamento de risco também são realizados
+                    antes da instalação dos canteiros para elaboração do PCMAT,
+                    PPRA e PCMSO.<br /><br />
+                    <strong
+                      >Podemos destacar alguns pontos que a empresa julga
+                      importantes na área de saúde e segurança:</strong
+                    ><br /><br />
+                    &bull; Elaboração de O.S. (Ordem de Serviço);<br />
+                    &bull; Realização de Integração dos funcionários no momento
+                    da admissão;<br />
+                    &bull; Formação dos SESMT's nas obras;<br />
+                    &bull; Elaboração do Book de EPI x Função;<br />
+                    &bull; Fornecimento de EPI's pata todos os funcionários;<br />
+                    &bull; Formação da CIPA;<br />
+                    &bull; Especificação de Certificado de Aprovação para todos
+                    os EPI's.
+                  </span>
                 </p>
-                <button onclick="readMore('seguranca')" class="btn-readmore">Leia mais</button>
+                <button onclick="readMore('seguranca')" class="btn-readmore">
+                  Leia mais
+                </button>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
@@ -207,125 +451,177 @@
             <p>Realizadas em diversos estados do Brasil</p>
           </header>
           <div class="cards">
-  
-          <div class="card">
-            <div class="img-card">
-              <img src="assets/img/saneamento.jpg" alt="" />
-            </div>
-            <div class="content-card">
-              <header>
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M2.71996 7.6501C2.91552 7.70752 3.10351 7.78809 3.27996 7.8901C3.89978 8.26003 4.60814 8.45535 5.32996 8.45535C6.05178 8.45535 6.76015 8.26003 7.37996 7.8901C7.77042 7.66926 8.21137 7.5532 8.65996 7.5532C9.10855 7.5532 9.5495 7.66926 9.93996 7.8901C10.5673 8.24879 11.2773 8.43748 12 8.43748C12.7226 8.43748 13.4327 8.24879 14.06 7.8901C14.4504 7.66926 14.8914 7.5532 15.34 7.5532C15.7885 7.5532 16.2295 7.66926 16.62 7.8901C17.2537 8.25229 17.97 8.44515 18.7 8.4501C19.4051 8.44865 20.0966 8.25504 20.7 7.8901C20.8764 7.78809 21.0644 7.70752 21.26 7.6501C21.5146 7.57584 21.7292 7.40348 21.8568 7.17093C21.9843 6.93839 22.0142 6.66471 21.94 6.4101C21.8657 6.15549 21.6933 5.94081 21.4608 5.81329C21.2282 5.68576 20.9546 5.65584 20.7 5.7301C20.3494 5.8383 20.0135 5.98945 19.7 6.1801C19.3814 6.36639 19.019 6.46458 18.65 6.46458C18.2809 6.46458 17.9185 6.36639 17.6 6.1801C16.9066 5.79117 16.1249 5.58691 15.33 5.58691C14.535 5.58691 13.7533 5.79117 13.06 6.1801C12.738 6.36715 12.3723 6.46568 12 6.46568C11.6276 6.46568 11.2619 6.36715 10.94 6.1801C10.2466 5.79117 9.46495 5.58691 8.66996 5.58691C7.87497 5.58691 7.09332 5.79117 6.39996 6.1801C6.08139 6.36639 5.719 6.46458 5.34996 6.46458C4.98092 6.46458 4.61853 6.36639 4.29996 6.1801C3.98645 5.98945 3.65057 5.8383 3.29996 5.7301C3.04535 5.65584 2.77167 5.68576 2.53913 5.81329C2.30658 5.94081 2.13422 6.15549 2.05996 6.4101C1.9857 6.66471 2.01562 6.93839 2.14315 7.17093C2.27067 7.40348 2.48535 7.57584 2.73996 7.6501H2.71996ZM20.72 15.7301C20.3694 15.8383 20.0335 15.9894 19.72 16.1801C19.4014 16.3664 19.039 16.4646 18.67 16.4646C18.3009 16.4646 17.9385 16.3664 17.62 16.1801C16.9266 15.7912 16.1449 15.5869 15.35 15.5869C14.555 15.5869 13.7733 15.7912 13.08 16.1801C12.758 16.3672 12.3923 16.4657 12.02 16.4657C11.6476 16.4657 11.2819 16.3672 10.96 16.1801C10.2666 15.7912 9.48495 15.5869 8.68996 15.5869C7.89497 15.5869 7.11332 15.7912 6.41996 16.1801C6.10139 16.3664 5.739 16.4646 5.36996 16.4646C5.00092 16.4646 4.63853 16.3664 4.31996 16.1801C4.00645 15.9894 3.67057 15.8383 3.31996 15.7301C3.19389 15.6933 3.06182 15.6818 2.93127 15.696C2.80073 15.7103 2.67427 15.7501 2.55913 15.8133C2.44398 15.8764 2.3424 15.9616 2.26019 16.064C2.17797 16.1664 2.11673 16.284 2.07996 16.4101C2.04319 16.5362 2.03161 16.6682 2.04589 16.7988C2.06016 16.9293 2.1 17.0558 2.16315 17.1709C2.22629 17.2861 2.3115 17.3877 2.4139 17.4699C2.5163 17.5521 2.63389 17.6133 2.75996 17.6501C2.95552 17.7075 3.14351 17.7881 3.31996 17.8901C3.93978 18.26 4.64814 18.4554 5.36996 18.4554C6.09178 18.4554 6.80015 18.26 7.41996 17.8901C7.81042 17.6693 8.25137 17.5532 8.69996 17.5532C9.14855 17.5532 9.5895 17.6693 9.97996 17.8901C10.6073 18.2488 11.3173 18.4375 12.04 18.4375C12.7626 18.4375 13.4727 18.2488 14.1 17.8901C14.4904 17.6693 14.9314 17.5532 15.38 17.5532C15.8285 17.5532 16.2695 17.6693 16.66 17.8901C17.2937 18.2523 18.01 18.4452 18.74 18.4501C19.4451 18.4486 20.1366 18.255 20.74 17.8901C20.9164 17.7881 21.1044 17.7075 21.3 17.6501C21.5546 17.5758 21.7692 17.4035 21.8968 17.1709C22.0243 16.9384 22.0542 16.6647 21.98 16.4101C21.9057 16.1555 21.7333 15.9408 21.5008 15.8133C21.2682 15.6858 20.9946 15.6558 20.74 15.7301H20.72ZM20.72 10.7301C20.3694 10.8383 20.0335 10.9894 19.72 11.1801C19.4014 11.3664 19.039 11.4646 18.67 11.4646C18.3009 11.4646 17.9385 11.3664 17.62 11.1801C16.9266 10.7912 16.1449 10.5869 15.35 10.5869C14.555 10.5869 13.7733 10.7912 13.08 11.1801C12.758 11.3672 12.3923 11.4657 12.02 11.4657C11.6476 11.4657 11.2819 11.3672 10.96 11.1801C10.2666 10.7912 9.48495 10.5869 8.68996 10.5869C7.89497 10.5869 7.11332 10.7912 6.41996 11.1801C6.10139 11.3664 5.739 11.4646 5.36996 11.4646C5.00092 11.4646 4.63853 11.3664 4.31996 11.1801C4.00645 10.9894 3.67057 10.8383 3.31996 10.7301C3.18902 10.6807 3.04917 10.6593 2.90944 10.6673C2.76971 10.6753 2.63322 10.7126 2.5088 10.7767C2.38438 10.8408 2.2748 10.9303 2.18715 11.0394C2.0995 11.1485 2.03573 11.2748 1.99996 11.4101C1.96319 11.5362 1.95161 11.6682 1.96589 11.7988C1.98016 11.9293 2.02 12.0558 2.08315 12.1709C2.14629 12.2861 2.2315 12.3877 2.3339 12.4699C2.4363 12.5521 2.55389 12.6133 2.67996 12.6501C2.87552 12.7075 3.06351 12.7881 3.23996 12.8901C3.85978 13.26 4.56814 13.4554 5.28996 13.4554C6.01178 13.4554 6.72015 13.26 7.33996 12.8901C7.73042 12.6693 8.17137 12.5532 8.61996 12.5532C9.06855 12.5532 9.5095 12.6693 9.89996 12.8901C10.5273 13.2488 11.2373 13.4375 11.96 13.4375C12.6826 13.4375 13.3927 13.2488 14.02 12.8901C14.4104 12.6693 14.8514 12.5532 15.3 12.5532C15.7485 12.5532 16.1895 12.6693 16.58 12.8901C17.2137 13.2523 17.93 13.4452 18.66 13.4501C19.3651 13.4486 20.0566 13.255 20.66 12.8901C20.8364 12.7881 21.0244 12.7075 21.22 12.6501C21.4746 12.5758 21.6892 12.4035 21.8168 12.1709C21.9443 11.9384 21.9742 11.6647 21.9 11.4101C21.8257 11.1555 21.6533 10.9408 21.4208 10.8133C21.1882 10.6858 20.9146 10.6558 20.66 10.7301H20.72Z" fill="#2f3337"/>
+            <div class="card">
+              <div class="img-card">
+                <img src="assets/img/saneamento.jpg" alt="" />
+              </div>
+              <div class="content-card">
+                <header>
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.71996 7.6501C2.91552 7.70752 3.10351 7.78809 3.27996 7.8901C3.89978 8.26003 4.60814 8.45535 5.32996 8.45535C6.05178 8.45535 6.76015 8.26003 7.37996 7.8901C7.77042 7.66926 8.21137 7.5532 8.65996 7.5532C9.10855 7.5532 9.5495 7.66926 9.93996 7.8901C10.5673 8.24879 11.2773 8.43748 12 8.43748C12.7226 8.43748 13.4327 8.24879 14.06 7.8901C14.4504 7.66926 14.8914 7.5532 15.34 7.5532C15.7885 7.5532 16.2295 7.66926 16.62 7.8901C17.2537 8.25229 17.97 8.44515 18.7 8.4501C19.4051 8.44865 20.0966 8.25504 20.7 7.8901C20.8764 7.78809 21.0644 7.70752 21.26 7.6501C21.5146 7.57584 21.7292 7.40348 21.8568 7.17093C21.9843 6.93839 22.0142 6.66471 21.94 6.4101C21.8657 6.15549 21.6933 5.94081 21.4608 5.81329C21.2282 5.68576 20.9546 5.65584 20.7 5.7301C20.3494 5.8383 20.0135 5.98945 19.7 6.1801C19.3814 6.36639 19.019 6.46458 18.65 6.46458C18.2809 6.46458 17.9185 6.36639 17.6 6.1801C16.9066 5.79117 16.1249 5.58691 15.33 5.58691C14.535 5.58691 13.7533 5.79117 13.06 6.1801C12.738 6.36715 12.3723 6.46568 12 6.46568C11.6276 6.46568 11.2619 6.36715 10.94 6.1801C10.2466 5.79117 9.46495 5.58691 8.66996 5.58691C7.87497 5.58691 7.09332 5.79117 6.39996 6.1801C6.08139 6.36639 5.719 6.46458 5.34996 6.46458C4.98092 6.46458 4.61853 6.36639 4.29996 6.1801C3.98645 5.98945 3.65057 5.8383 3.29996 5.7301C3.04535 5.65584 2.77167 5.68576 2.53913 5.81329C2.30658 5.94081 2.13422 6.15549 2.05996 6.4101C1.9857 6.66471 2.01562 6.93839 2.14315 7.17093C2.27067 7.40348 2.48535 7.57584 2.73996 7.6501H2.71996ZM20.72 15.7301C20.3694 15.8383 20.0335 15.9894 19.72 16.1801C19.4014 16.3664 19.039 16.4646 18.67 16.4646C18.3009 16.4646 17.9385 16.3664 17.62 16.1801C16.9266 15.7912 16.1449 15.5869 15.35 15.5869C14.555 15.5869 13.7733 15.7912 13.08 16.1801C12.758 16.3672 12.3923 16.4657 12.02 16.4657C11.6476 16.4657 11.2819 16.3672 10.96 16.1801C10.2666 15.7912 9.48495 15.5869 8.68996 15.5869C7.89497 15.5869 7.11332 15.7912 6.41996 16.1801C6.10139 16.3664 5.739 16.4646 5.36996 16.4646C5.00092 16.4646 4.63853 16.3664 4.31996 16.1801C4.00645 15.9894 3.67057 15.8383 3.31996 15.7301C3.19389 15.6933 3.06182 15.6818 2.93127 15.696C2.80073 15.7103 2.67427 15.7501 2.55913 15.8133C2.44398 15.8764 2.3424 15.9616 2.26019 16.064C2.17797 16.1664 2.11673 16.284 2.07996 16.4101C2.04319 16.5362 2.03161 16.6682 2.04589 16.7988C2.06016 16.9293 2.1 17.0558 2.16315 17.1709C2.22629 17.2861 2.3115 17.3877 2.4139 17.4699C2.5163 17.5521 2.63389 17.6133 2.75996 17.6501C2.95552 17.7075 3.14351 17.7881 3.31996 17.8901C3.93978 18.26 4.64814 18.4554 5.36996 18.4554C6.09178 18.4554 6.80015 18.26 7.41996 17.8901C7.81042 17.6693 8.25137 17.5532 8.69996 17.5532C9.14855 17.5532 9.5895 17.6693 9.97996 17.8901C10.6073 18.2488 11.3173 18.4375 12.04 18.4375C12.7626 18.4375 13.4727 18.2488 14.1 17.8901C14.4904 17.6693 14.9314 17.5532 15.38 17.5532C15.8285 17.5532 16.2695 17.6693 16.66 17.8901C17.2937 18.2523 18.01 18.4452 18.74 18.4501C19.4451 18.4486 20.1366 18.255 20.74 17.8901C20.9164 17.7881 21.1044 17.7075 21.3 17.6501C21.5546 17.5758 21.7692 17.4035 21.8968 17.1709C22.0243 16.9384 22.0542 16.6647 21.98 16.4101C21.9057 16.1555 21.7333 15.9408 21.5008 15.8133C21.2682 15.6858 20.9946 15.6558 20.74 15.7301H20.72ZM20.72 10.7301C20.3694 10.8383 20.0335 10.9894 19.72 11.1801C19.4014 11.3664 19.039 11.4646 18.67 11.4646C18.3009 11.4646 17.9385 11.3664 17.62 11.1801C16.9266 10.7912 16.1449 10.5869 15.35 10.5869C14.555 10.5869 13.7733 10.7912 13.08 11.1801C12.758 11.3672 12.3923 11.4657 12.02 11.4657C11.6476 11.4657 11.2819 11.3672 10.96 11.1801C10.2666 10.7912 9.48495 10.5869 8.68996 10.5869C7.89497 10.5869 7.11332 10.7912 6.41996 11.1801C6.10139 11.3664 5.739 11.4646 5.36996 11.4646C5.00092 11.4646 4.63853 11.3664 4.31996 11.1801C4.00645 10.9894 3.67057 10.8383 3.31996 10.7301C3.18902 10.6807 3.04917 10.6593 2.90944 10.6673C2.76971 10.6753 2.63322 10.7126 2.5088 10.7767C2.38438 10.8408 2.2748 10.9303 2.18715 11.0394C2.0995 11.1485 2.03573 11.2748 1.99996 11.4101C1.96319 11.5362 1.95161 11.6682 1.96589 11.7988C1.98016 11.9293 2.02 12.0558 2.08315 12.1709C2.14629 12.2861 2.2315 12.3877 2.3339 12.4699C2.4363 12.5521 2.55389 12.6133 2.67996 12.6501C2.87552 12.7075 3.06351 12.7881 3.23996 12.8901C3.85978 13.26 4.56814 13.4554 5.28996 13.4554C6.01178 13.4554 6.72015 13.26 7.33996 12.8901C7.73042 12.6693 8.17137 12.5532 8.61996 12.5532C9.06855 12.5532 9.5095 12.6693 9.89996 12.8901C10.5273 13.2488 11.2373 13.4375 11.96 13.4375C12.6826 13.4375 13.3927 13.2488 14.02 12.8901C14.4104 12.6693 14.8514 12.5532 15.3 12.5532C15.7485 12.5532 16.1895 12.6693 16.58 12.8901C17.2137 13.2523 17.93 13.4452 18.66 13.4501C19.3651 13.4486 20.0566 13.255 20.66 12.8901C20.8364 12.7881 21.0244 12.7075 21.22 12.6501C21.4746 12.5758 21.6892 12.4035 21.8168 12.1709C21.9443 11.9384 21.9742 11.6647 21.9 11.4101C21.8257 11.1555 21.6533 10.9408 21.4208 10.8133C21.1882 10.6858 20.9146 10.6558 20.66 10.7301H20.72Z"
+                      fill="#2f3337"
+                    />
                   </svg>
-                  
-                <h3>Saneamento</h3>
-              </header>
-              <p>
-                Exemplo de obras de Ampliação do Serviço de Esgotamento Sanitário de Feira de Santana.
-              </p>
-              <a href="#">Leia mais</a>
-            </div>
-          </div>
-  
-          <div class="card">
-            <div class="img-card">
-              <img src="assets/img/barragem.jpg" alt="" />
-            </div>
-            <div class="content-card">
-              <header>
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M21 9C21.2652 9 21.5196 8.89464 21.7071 8.70711C21.8946 8.51957 22 8.26522 22 8C22 7.73478 21.8946 7.48043 21.7071 7.29289C21.5196 7.10536 21.2652 7 21 7H20V5H21C21.2652 5 21.5196 4.89464 21.7071 4.70711C21.8946 4.51957 22 4.26522 22 4C22 3.73478 21.8946 3.48043 21.7071 3.29289C21.5196 3.10536 21.2652 3 21 3H3C2.73478 3 2.48043 3.10536 2.29289 3.29289C2.10536 3.48043 2 3.73478 2 4C2 4.26522 2.10536 4.51957 2.29289 4.70711C2.48043 4.89464 2.73478 5 3 5H6V7H3C2.73478 7 2.48043 7.10536 2.29289 7.29289C2.10536 7.48043 2 7.73478 2 8C2 8.26522 2.10536 8.51957 2.29289 8.70711C2.48043 8.89464 2.73478 9 3 9H4V11H3C2.73478 11 2.48043 11.1054 2.29289 11.2929C2.10536 11.4804 2 11.7348 2 12C2 12.2652 2.10536 12.5196 2.29289 12.7071C2.48043 12.8946 2.73478 13 3 13H6V15H3C2.73478 15 2.48043 15.1054 2.29289 15.2929C2.10536 15.4804 2 15.7348 2 16C2 16.2652 2.10536 16.5196 2.29289 16.7071C2.48043 16.8946 2.73478 17 3 17H4V19H3C2.73478 19 2.48043 19.1054 2.29289 19.2929C2.10536 19.4804 2 19.7348 2 20C2 20.2652 2.10536 20.5196 2.29289 20.7071C2.48043 20.8946 2.73478 21 3 21H21C21.2652 21 21.5196 20.8946 21.7071 20.7071C21.8946 20.5196 22 20.2652 22 20C22 19.7348 21.8946 19.4804 21.7071 19.2929C21.5196 19.1054 21.2652 19 21 19H18V17H21C21.2652 17 21.5196 16.8946 21.7071 16.7071C21.8946 16.5196 22 16.2652 22 16C22 15.7348 21.8946 15.4804 21.7071 15.2929C21.5196 15.1054 21.2652 15 21 15H20V13H21C21.2652 13 21.5196 12.8946 21.7071 12.7071C21.8946 12.5196 22 12.2652 22 12C22 11.7348 21.8946 11.4804 21.7071 11.2929C21.5196 11.1054 21.2652 11 21 11H18V9H21ZM8 5H12V7H8V5ZM16 9V11H12V9H16ZM6 9H10V11H6V9ZM12 13V15H8V13H12ZM10 19H6V17H10V19ZM16 19H12V17H16V19ZM18 15H14V13H18V15ZM14 7V5H18V7H14Z" fill="#2f3337"/>
-                  </svg>
-                  
-                <h3>Barragens</h3>
-              </header>
-              <p>
-                Serviços de Implantação da Barragem de Pedras Altas e suas Obras Complementares, localizada no Rio Itapicuru-Açu.
-              </p>
-              <a href="#">Leia mais</a>
-            </div>
-          </div>
-  
-          <div class="card">
-  
-            <div class="img-card">
-              <img src="assets/img/rodovias.jpg" alt="" />
-            </div>
-  
-            <div class="content-card">
-              <header>
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 12.5V17.5C1 17.7652 1.10536 18.0196 1.29289 18.2071C1.48043 18.3946 1.73478 18.5 2 18.5H3C3 19.2956 3.31607 20.0587 3.87868 20.6213C4.44129 21.1839 5.20435 21.5 6 21.5C6.79565 21.5 7.55871 21.1839 8.12132 20.6213C8.68393 20.0587 9 19.2956 9 18.5H15C15 19.2956 15.3161 20.0587 15.8787 20.6213C16.4413 21.1839 17.2044 21.5 18 21.5C18.7956 21.5 19.5587 21.1839 20.1213 20.6213C20.6839 20.0587 21 19.2956 21 18.5H22C22.2652 18.5 22.5196 18.3946 22.7071 18.2071C22.8946 18.0196 23 17.7652 23 17.5V5.5C23 4.70435 22.6839 3.94129 22.1213 3.37868C21.5587 2.81607 20.7956 2.5 20 2.5H11C10.2044 2.5 9.44129 2.81607 8.87868 3.37868C8.31607 3.94129 8 4.70435 8 5.5V7.5H6C5.53426 7.5 5.07493 7.60844 4.65836 7.81672C4.24179 8.025 3.87944 8.32741 3.6 8.7L1.2 11.9C1.17075 11.9435 1.14722 11.9905 1.13 12.04L1.07 12.15C1.02587 12.2615 1.00216 12.3801 1 12.5ZM17 18.5C17 18.3022 17.0586 18.1089 17.1685 17.9444C17.2784 17.78 17.4346 17.6518 17.6173 17.5761C17.8 17.5004 18.0011 17.4806 18.1951 17.5192C18.3891 17.5578 18.5673 17.653 18.7071 17.7929C18.847 17.9327 18.9422 18.1109 18.9808 18.3049C19.0194 18.4989 18.9996 18.7 18.9239 18.8827C18.8482 19.0654 18.72 19.2216 18.5556 19.3315C18.3911 19.4414 18.1978 19.5 18 19.5C17.7348 19.5 17.4804 19.3946 17.2929 19.2071C17.1054 19.0196 17 18.7652 17 18.5ZM10 5.5C10 5.23478 10.1054 4.98043 10.2929 4.79289C10.4804 4.60536 10.7348 4.5 11 4.5H20C20.2652 4.5 20.5196 4.60536 20.7071 4.79289C20.8946 4.98043 21 5.23478 21 5.5V16.5H20.22C19.9388 16.1906 19.5961 15.9435 19.2138 15.7743C18.8315 15.6052 18.418 15.5178 18 15.5178C17.582 15.5178 17.1685 15.6052 16.7862 15.7743C16.4039 15.9435 16.0612 16.1906 15.78 16.5H10V5.5ZM8 11.5H4L5.2 9.9C5.29315 9.7758 5.41393 9.675 5.55279 9.60557C5.69164 9.53615 5.84475 9.5 6 9.5H8V11.5ZM5 18.5C5 18.3022 5.05865 18.1089 5.16853 17.9444C5.27841 17.78 5.43459 17.6518 5.61732 17.5761C5.80004 17.5004 6.00111 17.4806 6.19509 17.5192C6.38907 17.5578 6.56725 17.653 6.70711 17.7929C6.84696 17.9327 6.9422 18.1109 6.98079 18.3049C7.01937 18.4989 6.99957 18.7 6.92388 18.8827C6.84819 19.0654 6.72002 19.2216 6.55557 19.3315C6.39112 19.4414 6.19778 19.5 6 19.5C5.73478 19.5 5.48043 19.3946 5.29289 19.2071C5.10536 19.0196 5 18.7652 5 18.5ZM3 13.5H8V16.28C7.40983 15.7526 6.63513 15.4797 5.84469 15.5209C5.05425 15.5621 4.31212 15.914 3.78 16.5H3V13.5Z" fill="#2f3337"/>
-                  </svg>
-                <h3>Rodovias</h3>
-              </header>
-              <p>
-                Obras e serviços de implantação e pavimentação de trechos da BR 235.
-              </p>
-              <a href="#">Leia mais</a>
-            </div>
-  
-          </div>
-  
-          <div class="card">
-            <div class="img-card">
-              <img src="assets/img/portos.jpg" alt="" />
-            </div>
-            <div class="content-card">
-              <header>
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.62003 17.28C3.71816 17.5267 3.91025 17.7242 4.15405 17.8292C4.39785 17.9343 4.67338 17.9381 4.92003 17.84C5.16668 17.7419 5.36425 17.5498 5.46927 17.306C5.57429 17.0622 5.57816 16.7867 5.48003 16.54L4.36003 13.72L11 12.25V17C11 17.2652 11.1054 17.5196 11.2929 17.7071C11.4805 17.8946 11.7348 18 12 18C12.2652 18 12.5196 17.8946 12.7071 17.7071C12.8947 17.5196 13 17.2652 13 17V12.25L19.64 13.72L18.52 16.54C18.4713 16.6621 18.4472 16.7926 18.449 16.9241C18.4507 17.0556 18.4784 17.1854 18.5304 17.3061C18.5825 17.4269 18.6578 17.5362 18.7521 17.6278C18.8464 17.7194 18.9578 17.7915 19.08 17.84C19.1978 17.8866 19.3234 17.9103 19.45 17.91C19.6503 17.9102 19.846 17.8502 20.0118 17.7379C20.1777 17.6256 20.3059 17.4661 20.38 17.28L21.93 13.37C21.9832 13.2348 22.0063 13.0896 21.9977 12.9445C21.9891 12.7994 21.9489 12.658 21.88 12.53C21.8132 12.4025 21.7196 12.2909 21.6057 12.2029C21.4918 12.1149 21.3603 12.0525 21.22 12.02L18 11.31V7C18 6.73478 17.8947 6.48043 17.7071 6.29289C17.5196 6.10536 17.2652 6 17 6H15V3C15 2.73478 14.8947 2.48043 14.7071 2.29289C14.5196 2.10536 14.2652 2 14 2H10C9.73482 2 9.48046 2.10536 9.29292 2.29289C9.10539 2.48043 9.00003 2.73478 9.00003 3V6H7.00003C6.73481 6 6.48046 6.10536 6.29292 6.29289C6.10539 6.48043 6.00003 6.73478 6.00003 7V11.31L2.78003 12C2.63979 12.0325 2.50823 12.0949 2.39432 12.1829C2.28041 12.2709 2.18685 12.3825 2.12003 12.51C2.05116 12.638 2.01101 12.7794 2.00237 12.9245C1.99374 13.0696 2.01683 13.2148 2.07003 13.35L3.62003 17.28ZM11 4H13V6H11V4ZM8.00003 8H16V10.86L12.22 10H12.12H12H11.88H11.78L8.00003 10.86V8ZM20.71 19.28C20.3592 19.3875 20.0232 19.5387 19.71 19.73C19.3915 19.9163 19.0291 20.0145 18.66 20.0145C18.291 20.0145 17.9286 19.9163 17.61 19.73C16.9173 19.3392 16.1354 19.1339 15.34 19.1339C14.5447 19.1339 13.7628 19.3392 13.07 19.73C12.7471 19.9141 12.3818 20.011 12.01 20.011C11.6383 20.011 11.273 19.9141 10.95 19.73C10.2567 19.3411 9.47502 19.1368 8.68003 19.1368C7.88504 19.1368 7.10339 19.3411 6.41003 19.73C6.09146 19.9163 5.72907 20.0145 5.36003 20.0145C4.99099 20.0145 4.6286 19.9163 4.31003 19.73C3.99687 19.5387 3.6609 19.3875 3.31003 19.28C3.17697 19.2327 3.0354 19.2141 2.89464 19.2255C2.75388 19.2368 2.61712 19.2778 2.49337 19.3459C2.36961 19.4139 2.26166 19.5073 2.17663 19.6201C2.0916 19.7328 2.03141 19.8623 2.00003 20C1.92538 20.2533 1.95392 20.5258 2.07944 20.7581C2.20496 20.9904 2.41727 21.1636 2.67003 21.24C2.87139 21.2946 3.0635 21.3788 3.24003 21.49C3.84674 21.846 4.5366 22.0357 5.24003 22.04C5.97063 22.0401 6.68826 21.8469 7.32003 21.48C7.71201 21.2638 8.15237 21.1504 8.60003 21.1504C9.04769 21.1504 9.48806 21.2638 9.88003 21.48C10.5073 21.8387 11.2174 22.0274 11.94 22.0274C12.6626 22.0274 13.3727 21.8387 14 21.48C14.392 21.2638 14.8324 21.1504 15.28 21.1504C15.7277 21.1504 16.1681 21.2638 16.56 21.48C17.1798 21.8499 17.8882 22.0453 18.61 22.0453C19.3318 22.0453 20.0402 21.8499 20.66 21.48C20.8366 21.3688 21.0287 21.2846 21.23 21.23C21.3631 21.2031 21.4893 21.1493 21.601 21.0721C21.7126 20.9948 21.8073 20.8956 21.8794 20.7805C21.9514 20.6654 21.9993 20.5368 22.02 20.4027C22.0408 20.2685 22.034 20.1315 22 20C21.9683 19.8647 21.9086 19.7374 21.8249 19.6265C21.7412 19.5155 21.6353 19.4232 21.5139 19.3554C21.3925 19.2877 21.2583 19.246 21.1199 19.233C20.9815 19.22 20.8419 19.236 20.71 19.28Z" fill="#2f3337"/>
-                  </svg>
-                  
-                <h3>Portos</h3>
-              </header>
-              <p>
-                Execução de Recalçamento de trechos de pavimentação na retroferra do cais comercial e sinalização horizontal e vertical dos acessos ao Porto Organizado de Salvador/BA.
-              </p>
-              <a href="#">Leia mais</a>
-            </div>
-          </div>
-  
-          <div class="card">
-            <div class="img-card">
-              <img src="assets/img/aeroportos.jpg" alt="" />
-            </div>
-            <div class="content-card">
-              <header>
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M22.0001 5.08032C22.0009 4.47054 21.8207 3.87423 21.4823 3.36695C21.144 2.85967 20.6626 2.46425 20.0993 2.23078C19.536 1.99732 18.916 1.93632 18.318 2.05551C17.72 2.1747 17.1708 2.46872 16.7401 2.90032L13.9301 5.71032L7.44006 3.55032C7.26727 3.49601 7.08297 3.48965 6.90685 3.53192C6.73072 3.57419 6.56938 3.66351 6.44006 3.79032L4.06006 6.15032C3.94729 6.2644 3.86362 6.40393 3.81611 6.55714C3.76859 6.71035 3.75863 6.87274 3.78707 7.03061C3.81551 7.18848 3.8815 7.33719 3.97949 7.46419C4.07747 7.5912 4.20457 7.69276 4.35006 7.76032L9.53006 10.1103L6.93006 12.7103L5.22006 11.8503C5.03543 11.7504 4.82404 11.7111 4.61584 11.738C4.40764 11.765 4.2132 11.8567 4.06006 12.0003L2.29006 13.8103C2.10381 13.9977 1.99927 14.2511 1.99927 14.5153C1.99927 14.7795 2.10381 15.033 2.29006 15.2203L8.78006 21.7103C8.96742 21.8966 9.22087 22.0011 9.48506 22.0011C9.74925 22.0011 10.0027 21.8966 10.1901 21.7103L12.0001 19.9403C12.1501 19.7918 12.2494 19.5996 12.2835 19.3912C12.3176 19.1828 12.2849 18.969 12.1901 18.7803L11.3301 17.0703L13.9301 14.4703L16.2801 19.6503C16.3476 19.7958 16.4492 19.9229 16.5762 20.0209C16.7032 20.1189 16.8519 20.1849 17.0098 20.2133C17.1676 20.2418 17.33 20.2318 17.4832 20.1843C17.6364 20.1368 17.776 20.0531 17.8901 19.9403L20.2501 17.5803C20.3769 17.451 20.4662 17.2897 20.5085 17.1135C20.5507 16.9374 20.5444 16.7531 20.4901 16.5803L18.3301 10.0903L21.1001 7.26032C21.3873 6.97489 21.6148 6.63512 21.7693 6.26083C21.9238 5.88655 22.0023 5.48524 22.0001 5.08032ZM19.6801 5.85032L16.4401 9.09032C16.3132 9.21964 16.2239 9.38098 16.1817 9.55711C16.1394 9.73323 16.1458 9.91753 16.2001 10.0903L18.3601 16.5703L17.4601 17.4703L15.1101 12.3003C15.0434 12.1535 14.9421 12.025 14.815 11.9257C14.6879 11.8265 14.5387 11.7594 14.3801 11.7303C14.2201 11.7011 14.0555 11.7114 13.9004 11.7602C13.7453 11.809 13.6045 11.8948 13.4901 12.0103L9.37006 16.1703C9.22215 16.3181 9.12427 16.5085 9.09019 16.7148C9.0561 16.9211 9.08754 17.1328 9.18006 17.3203L10.0001 19.0003L9.44006 19.5603L4.41006 14.5203L5.00006 14.0003L6.71006 14.8603C6.89755 14.9528 7.10932 14.9843 7.31561 14.9502C7.52189 14.9161 7.7123 14.8182 7.86006 14.6703L12.0001 10.5103C12.115 10.3963 12.2005 10.2561 12.2492 10.1018C12.298 9.94744 12.3086 9.78357 12.2801 9.62424C12.2516 9.46491 12.1848 9.31488 12.0855 9.18705C11.9862 9.05921 11.8574 8.95739 11.7101 8.89032L6.50006 6.54032L7.40006 5.64032L13.8801 7.80032C14.0529 7.85463 14.2372 7.86099 14.4133 7.81872C14.5894 7.77645 14.7507 7.68714 14.8801 7.56032L18.1201 4.32032C18.2197 4.21842 18.3387 4.13746 18.4701 4.08219C18.6014 4.02691 18.7425 3.99844 18.8851 3.99844C19.0276 3.99844 19.1687 4.02691 19.3 4.08219C19.4314 4.13746 19.5504 4.21842 19.6501 4.32032C19.7544 4.41697 19.8369 4.53475 19.892 4.6658C19.9472 4.79686 19.9738 4.93817 19.9701 5.08032C19.9755 5.22152 19.9526 5.36238 19.9028 5.49461C19.853 5.62684 19.7773 5.74778 19.6801 5.85032Z" fill="#2f3337"/>
-                  </svg>
-                  
-                <h3>Aeroportos</h3>
-              </header>
-              <p>
-                Reabilitação e Construção do Aeroporto de Aracati/CE.
-              </p>
-              <a href="#">Leia mais</a>
-            </div>
-          </div>
-  
-          <div class="card">
-            <div class="img-card">
-              <img src="assets/img/pontes.jpg" alt="" />
-            </div>
-            <div class="content-card">
-              <header>
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20.0001 9.67017V9.50017C20.0061 7.79911 19.4664 6.14096 18.4602 4.76938C17.454 3.3978 16.0345 2.38513 14.4101 1.88017H14.3501C13.5111 1.6244 12.637 1.5029 11.7601 1.52017C9.67189 1.63476 7.70616 2.54192 6.26406 4.05649C4.82196 5.57107 4.01221 7.57889 4.00007 9.67017C3.41408 9.87631 2.90653 10.2593 2.54748 10.7662C2.18844 11.2731 1.99561 11.879 1.99561 12.5002C1.99561 13.1214 2.18844 13.7272 2.54748 14.2341C2.90653 14.7411 3.41408 15.124 4.00007 15.3302C4.20603 17.3049 5.13898 19.1326 6.61754 20.4577C8.0961 21.7829 10.0146 22.5109 12.0001 22.5002H12.2301C14.15 22.4072 15.975 21.637 17.3809 20.3262C18.7869 19.0155 19.683 17.2489 19.9101 15.3402C20.503 15.1457 21.0204 14.7712 21.3905 14.2688C21.7605 13.7664 21.9647 13.1611 21.9746 12.5372C21.9845 11.9133 21.7997 11.3019 21.4457 10.788C21.0918 10.2741 20.5865 9.88337 20.0001 9.67017ZM12.1801 20.5002C10.7325 20.542 9.31856 20.0589 8.19927 19.14C7.07998 18.221 6.33083 16.9282 6.09007 15.5002H17.8601C17.616 16.8521 16.922 18.0817 15.8909 18.9894C14.8597 19.8971 13.552 20.4295 12.1801 20.5002ZM19.0001 13.5002H5.00007C4.73485 13.5002 4.4805 13.3948 4.29296 13.2073C4.10542 13.0197 4.00007 12.7654 4.00007 12.5002C4.00007 12.235 4.10542 11.9806 4.29296 11.7931C4.4805 11.6055 4.73485 11.5002 5.00007 11.5002H7.00007C7.26528 11.5002 7.51964 11.3948 7.70717 11.2073C7.89471 11.0197 8.00007 10.7654 8.00007 10.5002C8.00007 10.235 7.89471 9.9806 7.70717 9.79306C7.51964 9.60552 7.26528 9.50017 7.00007 9.50017H6.00007C6.04483 8.46278 6.34133 7.45186 6.86398 6.55463C7.38664 5.65741 8.11975 4.90083 9.00007 4.35017V7.50017C9.00007 7.76538 9.10542 8.01974 9.29296 8.20727C9.48049 8.39481 9.73485 8.50017 10.0001 8.50017C10.2653 8.50017 10.5196 8.39481 10.7072 8.20727C10.8947 8.01974 11.0001 7.76538 11.0001 7.50017V3.59017C11.2715 3.54482 11.5453 3.51477 11.8201 3.50017H12.0001C12.3352 3.50489 12.6695 3.53497 13.0001 3.59017V7.50017C13.0001 7.76538 13.1054 8.01974 13.293 8.20727C13.4805 8.39481 13.7348 8.50017 14.0001 8.50017C14.2653 8.50017 14.5196 8.39481 14.7072 8.20727C14.8947 8.01974 15.0001 7.76538 15.0001 7.50017V4.32017C15.4243 4.56579 15.82 4.85756 16.1801 5.19017C16.7566 5.75007 17.2148 6.42009 17.5275 7.16047C17.8401 7.90084 18.0008 8.69649 18.0001 9.50017H17.0001C16.7348 9.50017 16.4805 9.60552 16.293 9.79306C16.1054 9.9806 16.0001 10.235 16.0001 10.5002C16.0001 10.7654 16.1054 11.0197 16.293 11.2073C16.4805 11.3948 16.7348 11.5002 17.0001 11.5002H19.0001C19.2653 11.5002 19.5196 11.6055 19.7072 11.7931C19.8947 11.9806 20.0001 12.235 20.0001 12.5002C20.0001 12.7654 19.8947 13.0197 19.7072 13.2073C19.5196 13.3948 19.2653 13.5002 19.0001 13.5002Z" fill="#2f3337"/>
-                  </svg>
-                  
-                <h3>Pontes e viadutos</h3>
-              </header>
-              <p>
-                Construção de ponte sob o Rio Paraguaçu na cidade de Iaçu/BA.
-              </p>
-              <a href="#">Leia mais</a>
-            </div>
-          </div>
-  
-          </div>
 
+                  <h3>Saneamento</h3>
+                </header>
+                <p>
+                  Exemplo de obras de Ampliação do Serviço de Esgotamento
+                  Sanitário de Feira de Santana.
+                </p>
+                <a href="#">Leia mais</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="img-card">
+                <img src="assets/img/barragem.jpg" alt="" />
+              </div>
+              <div class="content-card">
+                <header>
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21 9C21.2652 9 21.5196 8.89464 21.7071 8.70711C21.8946 8.51957 22 8.26522 22 8C22 7.73478 21.8946 7.48043 21.7071 7.29289C21.5196 7.10536 21.2652 7 21 7H20V5H21C21.2652 5 21.5196 4.89464 21.7071 4.70711C21.8946 4.51957 22 4.26522 22 4C22 3.73478 21.8946 3.48043 21.7071 3.29289C21.5196 3.10536 21.2652 3 21 3H3C2.73478 3 2.48043 3.10536 2.29289 3.29289C2.10536 3.48043 2 3.73478 2 4C2 4.26522 2.10536 4.51957 2.29289 4.70711C2.48043 4.89464 2.73478 5 3 5H6V7H3C2.73478 7 2.48043 7.10536 2.29289 7.29289C2.10536 7.48043 2 7.73478 2 8C2 8.26522 2.10536 8.51957 2.29289 8.70711C2.48043 8.89464 2.73478 9 3 9H4V11H3C2.73478 11 2.48043 11.1054 2.29289 11.2929C2.10536 11.4804 2 11.7348 2 12C2 12.2652 2.10536 12.5196 2.29289 12.7071C2.48043 12.8946 2.73478 13 3 13H6V15H3C2.73478 15 2.48043 15.1054 2.29289 15.2929C2.10536 15.4804 2 15.7348 2 16C2 16.2652 2.10536 16.5196 2.29289 16.7071C2.48043 16.8946 2.73478 17 3 17H4V19H3C2.73478 19 2.48043 19.1054 2.29289 19.2929C2.10536 19.4804 2 19.7348 2 20C2 20.2652 2.10536 20.5196 2.29289 20.7071C2.48043 20.8946 2.73478 21 3 21H21C21.2652 21 21.5196 20.8946 21.7071 20.7071C21.8946 20.5196 22 20.2652 22 20C22 19.7348 21.8946 19.4804 21.7071 19.2929C21.5196 19.1054 21.2652 19 21 19H18V17H21C21.2652 17 21.5196 16.8946 21.7071 16.7071C21.8946 16.5196 22 16.2652 22 16C22 15.7348 21.8946 15.4804 21.7071 15.2929C21.5196 15.1054 21.2652 15 21 15H20V13H21C21.2652 13 21.5196 12.8946 21.7071 12.7071C21.8946 12.5196 22 12.2652 22 12C22 11.7348 21.8946 11.4804 21.7071 11.2929C21.5196 11.1054 21.2652 11 21 11H18V9H21ZM8 5H12V7H8V5ZM16 9V11H12V9H16ZM6 9H10V11H6V9ZM12 13V15H8V13H12ZM10 19H6V17H10V19ZM16 19H12V17H16V19ZM18 15H14V13H18V15ZM14 7V5H18V7H14Z"
+                      fill="#2f3337"
+                    />
+                  </svg>
+
+                  <h3>Barragens</h3>
+                </header>
+                <p>
+                  Serviços de Implantação da Barragem de Pedras Altas e suas
+                  Obras Complementares, localizada no Rio Itapicuru-Açu.
+                </p>
+                <a href="#">Leia mais</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="img-card">
+                <img src="assets/img/rodovias.jpg" alt="" />
+              </div>
+
+              <div class="content-card">
+                <header>
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 12.5V17.5C1 17.7652 1.10536 18.0196 1.29289 18.2071C1.48043 18.3946 1.73478 18.5 2 18.5H3C3 19.2956 3.31607 20.0587 3.87868 20.6213C4.44129 21.1839 5.20435 21.5 6 21.5C6.79565 21.5 7.55871 21.1839 8.12132 20.6213C8.68393 20.0587 9 19.2956 9 18.5H15C15 19.2956 15.3161 20.0587 15.8787 20.6213C16.4413 21.1839 17.2044 21.5 18 21.5C18.7956 21.5 19.5587 21.1839 20.1213 20.6213C20.6839 20.0587 21 19.2956 21 18.5H22C22.2652 18.5 22.5196 18.3946 22.7071 18.2071C22.8946 18.0196 23 17.7652 23 17.5V5.5C23 4.70435 22.6839 3.94129 22.1213 3.37868C21.5587 2.81607 20.7956 2.5 20 2.5H11C10.2044 2.5 9.44129 2.81607 8.87868 3.37868C8.31607 3.94129 8 4.70435 8 5.5V7.5H6C5.53426 7.5 5.07493 7.60844 4.65836 7.81672C4.24179 8.025 3.87944 8.32741 3.6 8.7L1.2 11.9C1.17075 11.9435 1.14722 11.9905 1.13 12.04L1.07 12.15C1.02587 12.2615 1.00216 12.3801 1 12.5ZM17 18.5C17 18.3022 17.0586 18.1089 17.1685 17.9444C17.2784 17.78 17.4346 17.6518 17.6173 17.5761C17.8 17.5004 18.0011 17.4806 18.1951 17.5192C18.3891 17.5578 18.5673 17.653 18.7071 17.7929C18.847 17.9327 18.9422 18.1109 18.9808 18.3049C19.0194 18.4989 18.9996 18.7 18.9239 18.8827C18.8482 19.0654 18.72 19.2216 18.5556 19.3315C18.3911 19.4414 18.1978 19.5 18 19.5C17.7348 19.5 17.4804 19.3946 17.2929 19.2071C17.1054 19.0196 17 18.7652 17 18.5ZM10 5.5C10 5.23478 10.1054 4.98043 10.2929 4.79289C10.4804 4.60536 10.7348 4.5 11 4.5H20C20.2652 4.5 20.5196 4.60536 20.7071 4.79289C20.8946 4.98043 21 5.23478 21 5.5V16.5H20.22C19.9388 16.1906 19.5961 15.9435 19.2138 15.7743C18.8315 15.6052 18.418 15.5178 18 15.5178C17.582 15.5178 17.1685 15.6052 16.7862 15.7743C16.4039 15.9435 16.0612 16.1906 15.78 16.5H10V5.5ZM8 11.5H4L5.2 9.9C5.29315 9.7758 5.41393 9.675 5.55279 9.60557C5.69164 9.53615 5.84475 9.5 6 9.5H8V11.5ZM5 18.5C5 18.3022 5.05865 18.1089 5.16853 17.9444C5.27841 17.78 5.43459 17.6518 5.61732 17.5761C5.80004 17.5004 6.00111 17.4806 6.19509 17.5192C6.38907 17.5578 6.56725 17.653 6.70711 17.7929C6.84696 17.9327 6.9422 18.1109 6.98079 18.3049C7.01937 18.4989 6.99957 18.7 6.92388 18.8827C6.84819 19.0654 6.72002 19.2216 6.55557 19.3315C6.39112 19.4414 6.19778 19.5 6 19.5C5.73478 19.5 5.48043 19.3946 5.29289 19.2071C5.10536 19.0196 5 18.7652 5 18.5ZM3 13.5H8V16.28C7.40983 15.7526 6.63513 15.4797 5.84469 15.5209C5.05425 15.5621 4.31212 15.914 3.78 16.5H3V13.5Z"
+                      fill="#2f3337"
+                    />
+                  </svg>
+                  <h3>Rodovias</h3>
+                </header>
+                <p>
+                  Obras e serviços de implantação e pavimentação de trechos da
+                  BR 235.
+                </p>
+                <a href="#">Leia mais</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="img-card">
+                <img src="assets/img/portos.jpg" alt="" />
+              </div>
+              <div class="content-card">
+                <header>
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3.62003 17.28C3.71816 17.5267 3.91025 17.7242 4.15405 17.8292C4.39785 17.9343 4.67338 17.9381 4.92003 17.84C5.16668 17.7419 5.36425 17.5498 5.46927 17.306C5.57429 17.0622 5.57816 16.7867 5.48003 16.54L4.36003 13.72L11 12.25V17C11 17.2652 11.1054 17.5196 11.2929 17.7071C11.4805 17.8946 11.7348 18 12 18C12.2652 18 12.5196 17.8946 12.7071 17.7071C12.8947 17.5196 13 17.2652 13 17V12.25L19.64 13.72L18.52 16.54C18.4713 16.6621 18.4472 16.7926 18.449 16.9241C18.4507 17.0556 18.4784 17.1854 18.5304 17.3061C18.5825 17.4269 18.6578 17.5362 18.7521 17.6278C18.8464 17.7194 18.9578 17.7915 19.08 17.84C19.1978 17.8866 19.3234 17.9103 19.45 17.91C19.6503 17.9102 19.846 17.8502 20.0118 17.7379C20.1777 17.6256 20.3059 17.4661 20.38 17.28L21.93 13.37C21.9832 13.2348 22.0063 13.0896 21.9977 12.9445C21.9891 12.7994 21.9489 12.658 21.88 12.53C21.8132 12.4025 21.7196 12.2909 21.6057 12.2029C21.4918 12.1149 21.3603 12.0525 21.22 12.02L18 11.31V7C18 6.73478 17.8947 6.48043 17.7071 6.29289C17.5196 6.10536 17.2652 6 17 6H15V3C15 2.73478 14.8947 2.48043 14.7071 2.29289C14.5196 2.10536 14.2652 2 14 2H10C9.73482 2 9.48046 2.10536 9.29292 2.29289C9.10539 2.48043 9.00003 2.73478 9.00003 3V6H7.00003C6.73481 6 6.48046 6.10536 6.29292 6.29289C6.10539 6.48043 6.00003 6.73478 6.00003 7V11.31L2.78003 12C2.63979 12.0325 2.50823 12.0949 2.39432 12.1829C2.28041 12.2709 2.18685 12.3825 2.12003 12.51C2.05116 12.638 2.01101 12.7794 2.00237 12.9245C1.99374 13.0696 2.01683 13.2148 2.07003 13.35L3.62003 17.28ZM11 4H13V6H11V4ZM8.00003 8H16V10.86L12.22 10H12.12H12H11.88H11.78L8.00003 10.86V8ZM20.71 19.28C20.3592 19.3875 20.0232 19.5387 19.71 19.73C19.3915 19.9163 19.0291 20.0145 18.66 20.0145C18.291 20.0145 17.9286 19.9163 17.61 19.73C16.9173 19.3392 16.1354 19.1339 15.34 19.1339C14.5447 19.1339 13.7628 19.3392 13.07 19.73C12.7471 19.9141 12.3818 20.011 12.01 20.011C11.6383 20.011 11.273 19.9141 10.95 19.73C10.2567 19.3411 9.47502 19.1368 8.68003 19.1368C7.88504 19.1368 7.10339 19.3411 6.41003 19.73C6.09146 19.9163 5.72907 20.0145 5.36003 20.0145C4.99099 20.0145 4.6286 19.9163 4.31003 19.73C3.99687 19.5387 3.6609 19.3875 3.31003 19.28C3.17697 19.2327 3.0354 19.2141 2.89464 19.2255C2.75388 19.2368 2.61712 19.2778 2.49337 19.3459C2.36961 19.4139 2.26166 19.5073 2.17663 19.6201C2.0916 19.7328 2.03141 19.8623 2.00003 20C1.92538 20.2533 1.95392 20.5258 2.07944 20.7581C2.20496 20.9904 2.41727 21.1636 2.67003 21.24C2.87139 21.2946 3.0635 21.3788 3.24003 21.49C3.84674 21.846 4.5366 22.0357 5.24003 22.04C5.97063 22.0401 6.68826 21.8469 7.32003 21.48C7.71201 21.2638 8.15237 21.1504 8.60003 21.1504C9.04769 21.1504 9.48806 21.2638 9.88003 21.48C10.5073 21.8387 11.2174 22.0274 11.94 22.0274C12.6626 22.0274 13.3727 21.8387 14 21.48C14.392 21.2638 14.8324 21.1504 15.28 21.1504C15.7277 21.1504 16.1681 21.2638 16.56 21.48C17.1798 21.8499 17.8882 22.0453 18.61 22.0453C19.3318 22.0453 20.0402 21.8499 20.66 21.48C20.8366 21.3688 21.0287 21.2846 21.23 21.23C21.3631 21.2031 21.4893 21.1493 21.601 21.0721C21.7126 20.9948 21.8073 20.8956 21.8794 20.7805C21.9514 20.6654 21.9993 20.5368 22.02 20.4027C22.0408 20.2685 22.034 20.1315 22 20C21.9683 19.8647 21.9086 19.7374 21.8249 19.6265C21.7412 19.5155 21.6353 19.4232 21.5139 19.3554C21.3925 19.2877 21.2583 19.246 21.1199 19.233C20.9815 19.22 20.8419 19.236 20.71 19.28Z"
+                      fill="#2f3337"
+                    />
+                  </svg>
+
+                  <h3>Portos</h3>
+                </header>
+                <p>
+                  Execução de Recalçamento de trechos de pavimentação na
+                  retroferra do cais comercial e sinalização horizontal e
+                  vertical dos acessos ao Porto Organizado de Salvador/BA.
+                </p>
+                <a href="#">Leia mais</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="img-card">
+                <img src="assets/img/aeroportos.jpg" alt="" />
+              </div>
+              <div class="content-card">
+                <header>
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22.0001 5.08032C22.0009 4.47054 21.8207 3.87423 21.4823 3.36695C21.144 2.85967 20.6626 2.46425 20.0993 2.23078C19.536 1.99732 18.916 1.93632 18.318 2.05551C17.72 2.1747 17.1708 2.46872 16.7401 2.90032L13.9301 5.71032L7.44006 3.55032C7.26727 3.49601 7.08297 3.48965 6.90685 3.53192C6.73072 3.57419 6.56938 3.66351 6.44006 3.79032L4.06006 6.15032C3.94729 6.2644 3.86362 6.40393 3.81611 6.55714C3.76859 6.71035 3.75863 6.87274 3.78707 7.03061C3.81551 7.18848 3.8815 7.33719 3.97949 7.46419C4.07747 7.5912 4.20457 7.69276 4.35006 7.76032L9.53006 10.1103L6.93006 12.7103L5.22006 11.8503C5.03543 11.7504 4.82404 11.7111 4.61584 11.738C4.40764 11.765 4.2132 11.8567 4.06006 12.0003L2.29006 13.8103C2.10381 13.9977 1.99927 14.2511 1.99927 14.5153C1.99927 14.7795 2.10381 15.033 2.29006 15.2203L8.78006 21.7103C8.96742 21.8966 9.22087 22.0011 9.48506 22.0011C9.74925 22.0011 10.0027 21.8966 10.1901 21.7103L12.0001 19.9403C12.1501 19.7918 12.2494 19.5996 12.2835 19.3912C12.3176 19.1828 12.2849 18.969 12.1901 18.7803L11.3301 17.0703L13.9301 14.4703L16.2801 19.6503C16.3476 19.7958 16.4492 19.9229 16.5762 20.0209C16.7032 20.1189 16.8519 20.1849 17.0098 20.2133C17.1676 20.2418 17.33 20.2318 17.4832 20.1843C17.6364 20.1368 17.776 20.0531 17.8901 19.9403L20.2501 17.5803C20.3769 17.451 20.4662 17.2897 20.5085 17.1135C20.5507 16.9374 20.5444 16.7531 20.4901 16.5803L18.3301 10.0903L21.1001 7.26032C21.3873 6.97489 21.6148 6.63512 21.7693 6.26083C21.9238 5.88655 22.0023 5.48524 22.0001 5.08032ZM19.6801 5.85032L16.4401 9.09032C16.3132 9.21964 16.2239 9.38098 16.1817 9.55711C16.1394 9.73323 16.1458 9.91753 16.2001 10.0903L18.3601 16.5703L17.4601 17.4703L15.1101 12.3003C15.0434 12.1535 14.9421 12.025 14.815 11.9257C14.6879 11.8265 14.5387 11.7594 14.3801 11.7303C14.2201 11.7011 14.0555 11.7114 13.9004 11.7602C13.7453 11.809 13.6045 11.8948 13.4901 12.0103L9.37006 16.1703C9.22215 16.3181 9.12427 16.5085 9.09019 16.7148C9.0561 16.9211 9.08754 17.1328 9.18006 17.3203L10.0001 19.0003L9.44006 19.5603L4.41006 14.5203L5.00006 14.0003L6.71006 14.8603C6.89755 14.9528 7.10932 14.9843 7.31561 14.9502C7.52189 14.9161 7.7123 14.8182 7.86006 14.6703L12.0001 10.5103C12.115 10.3963 12.2005 10.2561 12.2492 10.1018C12.298 9.94744 12.3086 9.78357 12.2801 9.62424C12.2516 9.46491 12.1848 9.31488 12.0855 9.18705C11.9862 9.05921 11.8574 8.95739 11.7101 8.89032L6.50006 6.54032L7.40006 5.64032L13.8801 7.80032C14.0529 7.85463 14.2372 7.86099 14.4133 7.81872C14.5894 7.77645 14.7507 7.68714 14.8801 7.56032L18.1201 4.32032C18.2197 4.21842 18.3387 4.13746 18.4701 4.08219C18.6014 4.02691 18.7425 3.99844 18.8851 3.99844C19.0276 3.99844 19.1687 4.02691 19.3 4.08219C19.4314 4.13746 19.5504 4.21842 19.6501 4.32032C19.7544 4.41697 19.8369 4.53475 19.892 4.6658C19.9472 4.79686 19.9738 4.93817 19.9701 5.08032C19.9755 5.22152 19.9526 5.36238 19.9028 5.49461C19.853 5.62684 19.7773 5.74778 19.6801 5.85032Z"
+                      fill="#2f3337"
+                    />
+                  </svg>
+
+                  <h3>Aeroportos</h3>
+                </header>
+                <p>Reabilitação e Construção do Aeroporto de Aracati/CE.</p>
+                <a href="#">Leia mais</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="img-card">
+                <img src="assets/img/pontes.jpg" alt="" />
+              </div>
+              <div class="content-card">
+                <header>
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20.0001 9.67017V9.50017C20.0061 7.79911 19.4664 6.14096 18.4602 4.76938C17.454 3.3978 16.0345 2.38513 14.4101 1.88017H14.3501C13.5111 1.6244 12.637 1.5029 11.7601 1.52017C9.67189 1.63476 7.70616 2.54192 6.26406 4.05649C4.82196 5.57107 4.01221 7.57889 4.00007 9.67017C3.41408 9.87631 2.90653 10.2593 2.54748 10.7662C2.18844 11.2731 1.99561 11.879 1.99561 12.5002C1.99561 13.1214 2.18844 13.7272 2.54748 14.2341C2.90653 14.7411 3.41408 15.124 4.00007 15.3302C4.20603 17.3049 5.13898 19.1326 6.61754 20.4577C8.0961 21.7829 10.0146 22.5109 12.0001 22.5002H12.2301C14.15 22.4072 15.975 21.637 17.3809 20.3262C18.7869 19.0155 19.683 17.2489 19.9101 15.3402C20.503 15.1457 21.0204 14.7712 21.3905 14.2688C21.7605 13.7664 21.9647 13.1611 21.9746 12.5372C21.9845 11.9133 21.7997 11.3019 21.4457 10.788C21.0918 10.2741 20.5865 9.88337 20.0001 9.67017ZM12.1801 20.5002C10.7325 20.542 9.31856 20.0589 8.19927 19.14C7.07998 18.221 6.33083 16.9282 6.09007 15.5002H17.8601C17.616 16.8521 16.922 18.0817 15.8909 18.9894C14.8597 19.8971 13.552 20.4295 12.1801 20.5002ZM19.0001 13.5002H5.00007C4.73485 13.5002 4.4805 13.3948 4.29296 13.2073C4.10542 13.0197 4.00007 12.7654 4.00007 12.5002C4.00007 12.235 4.10542 11.9806 4.29296 11.7931C4.4805 11.6055 4.73485 11.5002 5.00007 11.5002H7.00007C7.26528 11.5002 7.51964 11.3948 7.70717 11.2073C7.89471 11.0197 8.00007 10.7654 8.00007 10.5002C8.00007 10.235 7.89471 9.9806 7.70717 9.79306C7.51964 9.60552 7.26528 9.50017 7.00007 9.50017H6.00007C6.04483 8.46278 6.34133 7.45186 6.86398 6.55463C7.38664 5.65741 8.11975 4.90083 9.00007 4.35017V7.50017C9.00007 7.76538 9.10542 8.01974 9.29296 8.20727C9.48049 8.39481 9.73485 8.50017 10.0001 8.50017C10.2653 8.50017 10.5196 8.39481 10.7072 8.20727C10.8947 8.01974 11.0001 7.76538 11.0001 7.50017V3.59017C11.2715 3.54482 11.5453 3.51477 11.8201 3.50017H12.0001C12.3352 3.50489 12.6695 3.53497 13.0001 3.59017V7.50017C13.0001 7.76538 13.1054 8.01974 13.293 8.20727C13.4805 8.39481 13.7348 8.50017 14.0001 8.50017C14.2653 8.50017 14.5196 8.39481 14.7072 8.20727C14.8947 8.01974 15.0001 7.76538 15.0001 7.50017V4.32017C15.4243 4.56579 15.82 4.85756 16.1801 5.19017C16.7566 5.75007 17.2148 6.42009 17.5275 7.16047C17.8401 7.90084 18.0008 8.69649 18.0001 9.50017H17.0001C16.7348 9.50017 16.4805 9.60552 16.293 9.79306C16.1054 9.9806 16.0001 10.235 16.0001 10.5002C16.0001 10.7654 16.1054 11.0197 16.293 11.2073C16.4805 11.3948 16.7348 11.5002 17.0001 11.5002H19.0001C19.2653 11.5002 19.5196 11.6055 19.7072 11.7931C19.8947 11.9806 20.0001 12.235 20.0001 12.5002C20.0001 12.7654 19.8947 13.0197 19.7072 13.2073C19.5196 13.3948 19.2653 13.5002 19.0001 13.5002Z"
+                      fill="#2f3337"
+                    />
+                  </svg>
+
+                  <h3>Pontes e viadutos</h3>
+                </header>
+                <p>
+                  Construção de ponte sob o Rio Paraguaçu na cidade de Iaçu/BA.
+                </p>
+                <a href="#">Leia mais</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -337,43 +633,64 @@
             <h2>Clientes</h2>
             <p>Nossos principais clientes</p>
           </header>
-          
+
           <div class="cliente">
-            <img src="#" alt="Cliente 1">
+            <img src="#" alt="Cliente 1" />
           </div>
-  
+
           <div class="cliente">
-            <img src="#" alt="Cliente 2">
+            <img src="#" alt="Cliente 2" />
           </div>
-  
+
           <div class="cliente">
-            <img src="#" alt="Cliente 3">
+            <img src="#" alt="Cliente 3" />
           </div>
-  
+
           <div class="cliente">
-            <img src="#" alt="Cliente 4">
+            <img src="#" alt="Cliente 4" />
           </div>
         </div>
       </div>
     </section>
 
     <footer>
-      <div class="sobre">
+      <div class="sobre" id="about">
         <header>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M21 10C21.1313 10 21.2614 9.97419 21.3827 9.92395C21.5041 9.8737 21.6143 9.80005 21.7072 9.70718C21.8 9.61432 21.8737 9.50406 21.9239 9.38272C21.9742 9.26138 22 9.13133 22 9V6C22.0001 5.79017 21.9341 5.58565 21.8114 5.41544C21.6887 5.24524 21.5155 5.11799 21.3164 5.05176L12.3164 2.05176C12.111 1.9834 11.889 1.9834 11.6836 2.05176L2.68359 5.05176C2.48449 5.11799 2.31131 5.24524 2.18861 5.41544C2.0659 5.58565 1.99991 5.79017 2 6V9C1.99997 9.13133 2.02581 9.26138 2.07605 9.38272C2.12629 9.50406 2.19995 9.61432 2.29282 9.70718C2.38568 9.80005 2.49594 9.8737 2.61728 9.92395C2.73862 9.97419 2.86867 10 3 10H4V17.1843C3.41674 17.3897 2.91137 17.7707 2.55327 18.2748C2.19517 18.779 2.0019 19.3816 2 20V22C1.99997 22.1313 2.02581 22.2614 2.07605 22.3827C2.12629 22.5041 2.19995 22.6143 2.29282 22.7072C2.38568 22.8 2.49594 22.8737 2.61728 22.9239C2.73862 22.9742 2.86867 23 3 23H21C21.1313 23 21.2614 22.9742 21.3827 22.9239C21.5041 22.8737 21.6143 22.8 21.7072 22.7072C21.8 22.6143 21.8737 22.5041 21.9239 22.3827C21.9742 22.2614 22 22.1313 22 22V20C21.9981 19.3816 21.8048 18.779 21.4467 18.2748C21.0886 17.7707 20.5833 17.3897 20 17.1843V10H21ZM20 21H4V20C4.00026 19.7349 4.10571 19.4807 4.29319 19.2932C4.48066 19.1057 4.73486 19.0003 5 19H19C19.2651 19.0003 19.5193 19.1057 19.7068 19.2932C19.8943 19.4807 19.9997 19.7349 20 20V21ZM6 17V10H8V17H6ZM10 17V10H14V17H10ZM16 17V10H18V17H16ZM4 8V6.7207L12 4.0537L20 6.7207V8H4Z" fill="#F5F5F5"/>
-            </svg>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21 10C21.1313 10 21.2614 9.97419 21.3827 9.92395C21.5041 9.8737 21.6143 9.80005 21.7072 9.70718C21.8 9.61432 21.8737 9.50406 21.9239 9.38272C21.9742 9.26138 22 9.13133 22 9V6C22.0001 5.79017 21.9341 5.58565 21.8114 5.41544C21.6887 5.24524 21.5155 5.11799 21.3164 5.05176L12.3164 2.05176C12.111 1.9834 11.889 1.9834 11.6836 2.05176L2.68359 5.05176C2.48449 5.11799 2.31131 5.24524 2.18861 5.41544C2.0659 5.58565 1.99991 5.79017 2 6V9C1.99997 9.13133 2.02581 9.26138 2.07605 9.38272C2.12629 9.50406 2.19995 9.61432 2.29282 9.70718C2.38568 9.80005 2.49594 9.8737 2.61728 9.92395C2.73862 9.97419 2.86867 10 3 10H4V17.1843C3.41674 17.3897 2.91137 17.7707 2.55327 18.2748C2.19517 18.779 2.0019 19.3816 2 20V22C1.99997 22.1313 2.02581 22.2614 2.07605 22.3827C2.12629 22.5041 2.19995 22.6143 2.29282 22.7072C2.38568 22.8 2.49594 22.8737 2.61728 22.9239C2.73862 22.9742 2.86867 23 3 23H21C21.1313 23 21.2614 22.9742 21.3827 22.9239C21.5041 22.8737 21.6143 22.8 21.7072 22.7072C21.8 22.6143 21.8737 22.5041 21.9239 22.3827C21.9742 22.2614 22 22.1313 22 22V20C21.9981 19.3816 21.8048 18.779 21.4467 18.2748C21.0886 17.7707 20.5833 17.3897 20 17.1843V10H21ZM20 21H4V20C4.00026 19.7349 4.10571 19.4807 4.29319 19.2932C4.48066 19.1057 4.73486 19.0003 5 19H19C19.2651 19.0003 19.5193 19.1057 19.7068 19.2932C19.8943 19.4807 19.9997 19.7349 20 20V21ZM6 17V10H8V17H6ZM10 17V10H14V17H10ZM16 17V10H18V17H16ZM4 8V6.7207L12 4.0537L20 6.7207V8H4Z"
+              fill="#F5F5F5"
+            />
+          </svg>
           <h2>Sobre a empresa</h2>
         </header>
-        <p>Lorem ipsum dolor  amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <p>
+          Lorem ipsum dolor amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
+        </p>
       </div>
 
       <div class="info">
         <header>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 9C11.7348 9 11.4804 9.10536 11.2929 9.29289C11.1054 9.48043 11 9.73478 11 10V13C11 13.2652 11.1054 13.5196 11.2929 13.7071C11.4804 13.8946 11.7348 14 12 14C12.2652 14 12.5196 13.8946 12.7071 13.7071C12.8946 13.5196 13 13.2652 13 13V10C13 9.73478 12.8946 9.48043 12.7071 9.29289C12.5196 9.10536 12.2652 9 12 9ZM19 2H5C4.20435 2 3.44129 2.31607 2.87868 2.87868C2.31607 3.44129 2 4.20435 2 5V15C2 15.7956 2.31607 16.5587 2.87868 17.1213C3.44129 17.6839 4.20435 18 5 18H16.59L20.29 21.71C20.3834 21.8027 20.4943 21.876 20.6161 21.9258C20.7379 21.9755 20.8684 22.0008 21 22C21.1312 22.0034 21.2613 21.976 21.38 21.92C21.5626 21.845 21.7189 21.7176 21.8293 21.5539C21.9396 21.3901 21.999 21.1974 22 21V5C22 4.20435 21.6839 3.44129 21.1213 2.87868C20.5587 2.31607 19.7956 2 19 2ZM20 18.59L17.71 16.29C17.6166 16.1973 17.5057 16.124 17.3839 16.0742C17.2621 16.0245 17.1316 15.9992 17 16H5C4.73478 16 4.48043 15.8946 4.29289 15.7071C4.10536 15.5196 4 15.2652 4 15V5C4 4.73478 4.10536 4.48043 4.29289 4.29289C4.48043 4.10536 4.73478 4 5 4H19C19.2652 4 19.5196 4.10536 19.7071 4.29289C19.8946 4.48043 20 4.73478 20 5V18.59ZM12 6C11.8022 6 11.6089 6.05865 11.4444 6.16853C11.28 6.27841 11.1518 6.43459 11.0761 6.61732C11.0004 6.80004 10.9806 7.00111 11.0192 7.19509C11.0578 7.38907 11.153 7.56725 11.2929 7.70711C11.4327 7.84696 11.6109 7.9422 11.8049 7.98079C11.9989 8.01937 12.2 7.99957 12.3827 7.92388C12.5654 7.84819 12.7216 7.72002 12.8315 7.55557C12.9414 7.39112 13 7.19778 13 7C13 6.73478 12.8946 6.48043 12.7071 6.29289C12.5196 6.10536 12.2652 6 12 6Z" fill="#F5F5F5"/>
-            </svg>
-            <h2>Informações</h2>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 9C11.7348 9 11.4804 9.10536 11.2929 9.29289C11.1054 9.48043 11 9.73478 11 10V13C11 13.2652 11.1054 13.5196 11.2929 13.7071C11.4804 13.8946 11.7348 14 12 14C12.2652 14 12.5196 13.8946 12.7071 13.7071C12.8946 13.5196 13 13.2652 13 13V10C13 9.73478 12.8946 9.48043 12.7071 9.29289C12.5196 9.10536 12.2652 9 12 9ZM19 2H5C4.20435 2 3.44129 2.31607 2.87868 2.87868C2.31607 3.44129 2 4.20435 2 5V15C2 15.7956 2.31607 16.5587 2.87868 17.1213C3.44129 17.6839 4.20435 18 5 18H16.59L20.29 21.71C20.3834 21.8027 20.4943 21.876 20.6161 21.9258C20.7379 21.9755 20.8684 22.0008 21 22C21.1312 22.0034 21.2613 21.976 21.38 21.92C21.5626 21.845 21.7189 21.7176 21.8293 21.5539C21.9396 21.3901 21.999 21.1974 22 21V5C22 4.20435 21.6839 3.44129 21.1213 2.87868C20.5587 2.31607 19.7956 2 19 2ZM20 18.59L17.71 16.29C17.6166 16.1973 17.5057 16.124 17.3839 16.0742C17.2621 16.0245 17.1316 15.9992 17 16H5C4.73478 16 4.48043 15.8946 4.29289 15.7071C4.10536 15.5196 4 15.2652 4 15V5C4 4.73478 4.10536 4.48043 4.29289 4.29289C4.48043 4.10536 4.73478 4 5 4H19C19.2652 4 19.5196 4.10536 19.7071 4.29289C19.8946 4.48043 20 4.73478 20 5V18.59ZM12 6C11.8022 6 11.6089 6.05865 11.4444 6.16853C11.28 6.27841 11.1518 6.43459 11.0761 6.61732C11.0004 6.80004 10.9806 7.00111 11.0192 7.19509C11.0578 7.38907 11.153 7.56725 11.2929 7.70711C11.4327 7.84696 11.6109 7.9422 11.8049 7.98079C11.9989 8.01937 12.2 7.99957 12.3827 7.92388C12.5654 7.84819 12.7216 7.72002 12.8315 7.55557C12.9414 7.39112 13 7.19778 13 7C13 6.73478 12.8946 6.48043 12.7071 6.29289C12.5196 6.10536 12.2652 6 12 6Z"
+              fill="#F5F5F5"
+            />
+          </svg>
+          <h2>Informações</h2>
         </header>
         <ul>
           <li>Sobre a empresa</li>
@@ -385,48 +702,112 @@
 
       <div class="contato">
         <header>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7 7C6.80222 7 6.60888 7.05865 6.44443 7.16853C6.27998 7.27841 6.15181 7.43459 6.07612 7.61732C6.00043 7.80004 5.98063 8.00111 6.01921 8.19509C6.0578 8.38907 6.15304 8.56725 6.29289 8.70711C6.43275 8.84696 6.61093 8.9422 6.80491 8.98079C6.99889 9.01937 7.19996 8.99957 7.38268 8.92388C7.56541 8.84819 7.72159 8.72002 7.83147 8.55557C7.94135 8.39112 8 8.19778 8 8C8 7.73478 7.89464 7.48043 7.70711 7.29289C7.51957 7.10536 7.26522 7 7 7ZM7 11C6.80222 11 6.60888 11.0586 6.44443 11.1685C6.27998 11.2784 6.15181 11.4346 6.07612 11.6173C6.00043 11.8 5.98063 12.0011 6.01921 12.1951C6.0578 12.3891 6.15304 12.5673 6.29289 12.7071C6.43275 12.847 6.61093 12.9422 6.80491 12.9808C6.99889 13.0194 7.19996 12.9996 7.38268 12.9239C7.56541 12.8482 7.72159 12.72 7.83147 12.5556C7.94135 12.3911 8 12.1978 8 12C8 11.7348 7.89464 11.4804 7.70711 11.2929C7.51957 11.1054 7.26522 11 7 11ZM17 11H11C10.7348 11 10.4804 11.1054 10.2929 11.2929C10.1054 11.4804 10 11.7348 10 12C10 12.2652 10.1054 12.5196 10.2929 12.7071C10.4804 12.8946 10.7348 13 11 13H17C17.2652 13 17.5196 12.8946 17.7071 12.7071C17.8946 12.5196 18 12.2652 18 12C18 11.7348 17.8946 11.4804 17.7071 11.2929C17.5196 11.1054 17.2652 11 17 11ZM17 7H11C10.7348 7 10.4804 7.10536 10.2929 7.29289C10.1054 7.48043 10 7.73478 10 8C10 8.26522 10.1054 8.51957 10.2929 8.70711C10.4804 8.89464 10.7348 9 11 9H17C17.2652 9 17.5196 8.89464 17.7071 8.70711C17.8946 8.51957 18 8.26522 18 8C18 7.73478 17.8946 7.48043 17.7071 7.29289C17.5196 7.10536 17.2652 7 17 7ZM19 2H5C4.20435 2 3.44129 2.31607 2.87868 2.87868C2.31607 3.44129 2 4.20435 2 5V15C2 15.7956 2.31607 16.5587 2.87868 17.1213C3.44129 17.6839 4.20435 18 5 18H16.59L20.29 21.71C20.3834 21.8027 20.4943 21.876 20.6161 21.9258C20.7379 21.9755 20.8684 22.0008 21 22C21.1312 22.0034 21.2613 21.976 21.38 21.92C21.5626 21.845 21.7189 21.7176 21.8293 21.5539C21.9396 21.3901 21.999 21.1974 22 21V5C22 4.20435 21.6839 3.44129 21.1213 2.87868C20.5587 2.31607 19.7956 2 19 2ZM20 18.59L17.71 16.29C17.6166 16.1973 17.5057 16.124 17.3839 16.0742C17.2621 16.0245 17.1316 15.9992 17 16H5C4.73478 16 4.48043 15.8946 4.29289 15.7071C4.10536 15.5196 4 15.2652 4 15V5C4 4.73478 4.10536 4.48043 4.29289 4.29289C4.48043 4.10536 4.73478 4 5 4H19C19.2652 4 19.5196 4.10536 19.7071 4.29289C19.8946 4.48043 20 4.73478 20 5V18.59Z" fill="#F5F5F5"/>
-            </svg>
-            
-            <h2>Contato</h2>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7 7C6.80222 7 6.60888 7.05865 6.44443 7.16853C6.27998 7.27841 6.15181 7.43459 6.07612 7.61732C6.00043 7.80004 5.98063 8.00111 6.01921 8.19509C6.0578 8.38907 6.15304 8.56725 6.29289 8.70711C6.43275 8.84696 6.61093 8.9422 6.80491 8.98079C6.99889 9.01937 7.19996 8.99957 7.38268 8.92388C7.56541 8.84819 7.72159 8.72002 7.83147 8.55557C7.94135 8.39112 8 8.19778 8 8C8 7.73478 7.89464 7.48043 7.70711 7.29289C7.51957 7.10536 7.26522 7 7 7ZM7 11C6.80222 11 6.60888 11.0586 6.44443 11.1685C6.27998 11.2784 6.15181 11.4346 6.07612 11.6173C6.00043 11.8 5.98063 12.0011 6.01921 12.1951C6.0578 12.3891 6.15304 12.5673 6.29289 12.7071C6.43275 12.847 6.61093 12.9422 6.80491 12.9808C6.99889 13.0194 7.19996 12.9996 7.38268 12.9239C7.56541 12.8482 7.72159 12.72 7.83147 12.5556C7.94135 12.3911 8 12.1978 8 12C8 11.7348 7.89464 11.4804 7.70711 11.2929C7.51957 11.1054 7.26522 11 7 11ZM17 11H11C10.7348 11 10.4804 11.1054 10.2929 11.2929C10.1054 11.4804 10 11.7348 10 12C10 12.2652 10.1054 12.5196 10.2929 12.7071C10.4804 12.8946 10.7348 13 11 13H17C17.2652 13 17.5196 12.8946 17.7071 12.7071C17.8946 12.5196 18 12.2652 18 12C18 11.7348 17.8946 11.4804 17.7071 11.2929C17.5196 11.1054 17.2652 11 17 11ZM17 7H11C10.7348 7 10.4804 7.10536 10.2929 7.29289C10.1054 7.48043 10 7.73478 10 8C10 8.26522 10.1054 8.51957 10.2929 8.70711C10.4804 8.89464 10.7348 9 11 9H17C17.2652 9 17.5196 8.89464 17.7071 8.70711C17.8946 8.51957 18 8.26522 18 8C18 7.73478 17.8946 7.48043 17.7071 7.29289C17.5196 7.10536 17.2652 7 17 7ZM19 2H5C4.20435 2 3.44129 2.31607 2.87868 2.87868C2.31607 3.44129 2 4.20435 2 5V15C2 15.7956 2.31607 16.5587 2.87868 17.1213C3.44129 17.6839 4.20435 18 5 18H16.59L20.29 21.71C20.3834 21.8027 20.4943 21.876 20.6161 21.9258C20.7379 21.9755 20.8684 22.0008 21 22C21.1312 22.0034 21.2613 21.976 21.38 21.92C21.5626 21.845 21.7189 21.7176 21.8293 21.5539C21.9396 21.3901 21.999 21.1974 22 21V5C22 4.20435 21.6839 3.44129 21.1213 2.87868C20.5587 2.31607 19.7956 2 19 2ZM20 18.59L17.71 16.29C17.6166 16.1973 17.5057 16.124 17.3839 16.0742C17.2621 16.0245 17.1316 15.9992 17 16H5C4.73478 16 4.48043 15.8946 4.29289 15.7071C4.10536 15.5196 4 15.2652 4 15V5C4 4.73478 4.10536 4.48043 4.29289 4.29289C4.48043 4.10536 4.73478 4 5 4H19C19.2652 4 19.5196 4.10536 19.7071 4.29289C19.8946 4.48043 20 4.73478 20 5V18.59Z"
+              fill="#F5F5F5"
+            />
+          </svg>
+
+          <h2>Contato</h2>
         </header>
-        <p>Você pode nos contactar através de e-mail, ou telefone. Ou em nosso endereço:
+        <p>
+          Você pode nos contactar através de e-mail, ou telefone. Ou em nosso
+          endereço:
         </p>
         <ul>
           <li>
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.4999 3.36005C12.3065 2.16658 10.6878 1.49609 8.99995 1.49609C7.31212 1.49609 5.69342 2.16658 4.49995 3.36005C3.30647 4.55353 2.63599 6.17223 2.63599 7.86005C2.63599 9.54788 3.30647 11.1666 4.49995 12.3601L8.45245 16.3201C8.52217 16.3904 8.60512 16.4461 8.69652 16.4842C8.78791 16.5223 8.88594 16.5419 8.98495 16.5419C9.08396 16.5419 9.18198 16.5223 9.27338 16.4842C9.36477 16.4461 9.44772 16.3904 9.51745 16.3201L13.4999 12.3226C14.6884 11.134 15.3561 9.52209 15.3561 7.8413C15.3561 6.16051 14.6884 4.54856 13.4999 3.36005ZM12.4274 11.2501L8.99995 14.6926L5.57245 11.2501C4.89531 10.5723 4.4343 9.70899 4.24772 8.76927C4.06113 7.82956 4.15734 6.85561 4.52418 5.97057C4.89101 5.08552 5.51201 4.32909 6.30867 3.79691C7.10533 3.26473 8.04189 2.98069 8.99995 2.98069C9.95801 2.98069 10.8946 3.26473 11.6912 3.79691C12.4879 4.32909 13.1089 5.08552 13.4757 5.97057C13.8426 6.85561 13.9388 7.82956 13.7522 8.76927C13.5656 9.70899 13.1046 10.5723 12.4274 11.2501ZM6.74995 5.55755C6.14448 6.16488 5.80449 6.98748 5.80449 7.84505C5.80449 8.70263 6.14448 9.52523 6.74995 10.1326C7.19977 10.5831 7.77264 10.8909 8.39668 11.0171C9.02073 11.1433 9.66816 11.0825 10.2578 10.8422C10.8473 10.6018 11.3528 10.1928 11.7108 9.66624C12.0688 9.13972 12.2633 8.51921 12.2699 7.88256C12.2733 7.45746 12.1914 7.036 12.0291 6.6431C11.8668 6.25019 11.6274 5.89382 11.3249 5.59505C11.0277 5.29099 10.6733 5.04871 10.282 4.88215C9.89077 4.7156 9.47045 4.62806 9.04525 4.62458C8.62004 4.62109 8.19835 4.70173 7.80443 4.86185C7.41051 5.02196 7.05214 5.2584 6.74995 5.55755ZM10.2674 9.06755C9.98323 9.35611 9.60761 9.53698 9.20479 9.57924C8.80198 9.62151 8.397 9.52253 8.05908 9.29925C7.72116 9.07597 7.4713 8.74224 7.3522 8.35512C7.23311 7.968 7.25218 7.55153 7.40617 7.17692C7.56015 6.80231 7.83947 6.49282 8.19639 6.30136C8.5533 6.1099 8.96564 6.04836 9.3629 6.12727C9.76016 6.20617 10.1177 6.42062 10.3743 6.73395C10.631 7.04728 10.7708 7.44003 10.7699 7.84505C10.759 8.30801 10.5648 8.7477 10.2299 9.06755H10.2674Z" fill="#F5F5F5"/>
-              </svg>
-              
-            Rua do Zaire</li>
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.4999 3.36005C12.3065 2.16658 10.6878 1.49609 8.99995 1.49609C7.31212 1.49609 5.69342 2.16658 4.49995 3.36005C3.30647 4.55353 2.63599 6.17223 2.63599 7.86005C2.63599 9.54788 3.30647 11.1666 4.49995 12.3601L8.45245 16.3201C8.52217 16.3904 8.60512 16.4461 8.69652 16.4842C8.78791 16.5223 8.88594 16.5419 8.98495 16.5419C9.08396 16.5419 9.18198 16.5223 9.27338 16.4842C9.36477 16.4461 9.44772 16.3904 9.51745 16.3201L13.4999 12.3226C14.6884 11.134 15.3561 9.52209 15.3561 7.8413C15.3561 6.16051 14.6884 4.54856 13.4999 3.36005ZM12.4274 11.2501L8.99995 14.6926L5.57245 11.2501C4.89531 10.5723 4.4343 9.70899 4.24772 8.76927C4.06113 7.82956 4.15734 6.85561 4.52418 5.97057C4.89101 5.08552 5.51201 4.32909 6.30867 3.79691C7.10533 3.26473 8.04189 2.98069 8.99995 2.98069C9.95801 2.98069 10.8946 3.26473 11.6912 3.79691C12.4879 4.32909 13.1089 5.08552 13.4757 5.97057C13.8426 6.85561 13.9388 7.82956 13.7522 8.76927C13.5656 9.70899 13.1046 10.5723 12.4274 11.2501ZM6.74995 5.55755C6.14448 6.16488 5.80449 6.98748 5.80449 7.84505C5.80449 8.70263 6.14448 9.52523 6.74995 10.1326C7.19977 10.5831 7.77264 10.8909 8.39668 11.0171C9.02073 11.1433 9.66816 11.0825 10.2578 10.8422C10.8473 10.6018 11.3528 10.1928 11.7108 9.66624C12.0688 9.13972 12.2633 8.51921 12.2699 7.88256C12.2733 7.45746 12.1914 7.036 12.0291 6.6431C11.8668 6.25019 11.6274 5.89382 11.3249 5.59505C11.0277 5.29099 10.6733 5.04871 10.282 4.88215C9.89077 4.7156 9.47045 4.62806 9.04525 4.62458C8.62004 4.62109 8.19835 4.70173 7.80443 4.86185C7.41051 5.02196 7.05214 5.2584 6.74995 5.55755ZM10.2674 9.06755C9.98323 9.35611 9.60761 9.53698 9.20479 9.57924C8.80198 9.62151 8.397 9.52253 8.05908 9.29925C7.72116 9.07597 7.4713 8.74224 7.3522 8.35512C7.23311 7.968 7.25218 7.55153 7.40617 7.17692C7.56015 6.80231 7.83947 6.49282 8.19639 6.30136C8.5533 6.1099 8.96564 6.04836 9.3629 6.12727C9.76016 6.20617 10.1177 6.42062 10.3743 6.73395C10.631 7.04728 10.7708 7.44003 10.7699 7.84505C10.759 8.30801 10.5648 8.7477 10.2299 9.06755H10.2674Z"
+                fill="#F5F5F5"
+              />
+            </svg>
+
+            Rua do Zaire
+          </li>
           <li>
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M14.5575 9.75C14.3925 9.75 14.22 9.6975 14.055 9.66C13.7211 9.58534 13.3928 9.48761 13.0725 9.3675C12.7246 9.24092 12.3421 9.2475 11.9987 9.38595C11.6554 9.52441 11.3753 9.78498 11.2125 10.1175L11.0475 10.4625C10.3191 10.0494 9.64623 9.54536 9.04501 8.9625C8.46215 8.36128 7.9581 7.68838 7.54501 6.96L7.89001 6.8025C8.22253 6.63969 8.48309 6.35965 8.62155 6.01627C8.76001 5.67289 8.76658 5.29043 8.64001 4.9425C8.5209 4.61927 8.42319 4.28856 8.34751 3.9525C8.31001 3.7875 8.28001 3.615 8.25751 3.45C8.16643 2.92171 7.88973 2.44331 7.47722 2.10093C7.06472 1.75855 6.54353 1.57471 6.00751 1.5825H3.75001C3.43294 1.58208 3.11937 1.64869 2.82985 1.77794C2.54032 1.90719 2.28138 2.09617 2.07001 2.3325C1.85425 2.57524 1.69359 2.86181 1.59908 3.17253C1.50458 3.48324 1.47845 3.81073 1.52251 4.1325C1.9302 7.2541 3.35641 10.154 5.58001 12.3825C7.80852 14.6061 10.7084 16.0323 13.83 16.44C13.9274 16.4474 14.0251 16.4474 14.1225 16.44C14.6756 16.4408 15.2096 16.2379 15.6225 15.87C15.8588 15.6586 16.0478 15.3997 16.1771 15.1102C16.3063 14.8206 16.3729 14.5071 16.3725 14.19V11.94C16.3685 11.4218 16.1856 10.9208 15.855 10.5218C15.5243 10.1228 15.066 9.85018 14.5575 9.75ZM14.925 14.25C14.9248 14.3547 14.9026 14.4581 14.86 14.5537C14.8174 14.6493 14.7552 14.7349 14.6775 14.805C14.5953 14.8799 14.4975 14.9356 14.3911 14.968C14.2848 15.0004 14.1725 15.0088 14.0625 14.9925C11.2637 14.627 8.66269 13.3515 6.66001 11.3625C4.65561 9.3581 3.36903 6.74803 3.00001 3.9375C2.98371 3.8275 2.99208 3.71525 3.02451 3.60889C3.05694 3.50252 3.11262 3.4047 3.18751 3.3225C3.25847 3.24386 3.34529 3.18115 3.44224 3.13849C3.5392 3.09583 3.64409 3.07419 3.75001 3.075H6.00001C6.17338 3.07076 6.34286 3.12674 6.47961 3.2334C6.61635 3.34006 6.71191 3.49081 6.75001 3.66C6.75001 3.8625 6.81751 4.0725 6.86251 4.275C6.94919 4.6679 7.0645 5.05393 7.20751 5.43L6.15751 5.925C5.97703 6.00785 5.83678 6.15889 5.76751 6.345C5.69249 6.5276 5.69249 6.7324 5.76751 6.915C6.84691 9.22707 8.70544 11.0856 11.0175 12.165C11.2001 12.24 11.4049 12.24 11.5875 12.165C11.7736 12.0957 11.9247 11.9555 12.0075 11.775L12.48 10.725C12.8669 10.8661 13.2628 10.9813 13.665 11.07C13.86 11.115 14.07 11.1525 14.2725 11.1825C14.4417 11.2206 14.5924 11.3162 14.6991 11.4529C14.8058 11.5896 14.8617 11.7591 14.8575 11.9325L14.925 14.25ZM10.5 1.5C10.3275 1.5 10.1475 1.5 9.97501 1.5C9.77609 1.51691 9.59205 1.61214 9.46335 1.76475C9.33465 1.91736 9.27185 2.11484 9.28876 2.31375C9.30566 2.51266 9.4009 2.69671 9.5535 2.82541C9.70611 2.95411 9.90359 3.01691 10.1025 3H10.5C11.6935 3 12.8381 3.47411 13.682 4.31802C14.5259 5.16193 15 6.30653 15 7.5C15 7.635 15 7.7625 15 7.8975C14.9834 8.09536 15.0459 8.29173 15.1738 8.44358C15.3018 8.59542 15.4847 8.69033 15.6825 8.7075H15.7425C15.9303 8.70826 16.1115 8.63858 16.2503 8.51221C16.3892 8.38584 16.4756 8.21199 16.4925 8.025C16.4925 7.8525 16.4925 7.6725 16.4925 7.5C16.4925 5.91 15.8614 4.38501 14.7378 3.26001C13.6142 2.13501 12.09 1.50199 10.5 1.5ZM12 7.5C12 7.69891 12.079 7.88968 12.2197 8.03033C12.3603 8.17098 12.5511 8.25 12.75 8.25C12.9489 8.25 13.1397 8.17098 13.2803 8.03033C13.421 7.88968 13.5 7.69891 13.5 7.5C13.5 6.70435 13.1839 5.94129 12.6213 5.37868C12.0587 4.81607 11.2957 4.5 10.5 4.5C10.3011 4.5 10.1103 4.57902 9.96968 4.71967C9.82902 4.86032 9.75001 5.05109 9.75001 5.25C9.75001 5.44891 9.82902 5.63968 9.96968 5.78033C10.1103 5.92098 10.3011 6 10.5 6C10.8978 6 11.2794 6.15804 11.5607 6.43934C11.842 6.72064 12 7.10218 12 7.5Z" fill="#F5F5F5"/>
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.5575 9.75C14.3925 9.75 14.22 9.6975 14.055 9.66C13.7211 9.58534 13.3928 9.48761 13.0725 9.3675C12.7246 9.24092 12.3421 9.2475 11.9987 9.38595C11.6554 9.52441 11.3753 9.78498 11.2125 10.1175L11.0475 10.4625C10.3191 10.0494 9.64623 9.54536 9.04501 8.9625C8.46215 8.36128 7.9581 7.68838 7.54501 6.96L7.89001 6.8025C8.22253 6.63969 8.48309 6.35965 8.62155 6.01627C8.76001 5.67289 8.76658 5.29043 8.64001 4.9425C8.5209 4.61927 8.42319 4.28856 8.34751 3.9525C8.31001 3.7875 8.28001 3.615 8.25751 3.45C8.16643 2.92171 7.88973 2.44331 7.47722 2.10093C7.06472 1.75855 6.54353 1.57471 6.00751 1.5825H3.75001C3.43294 1.58208 3.11937 1.64869 2.82985 1.77794C2.54032 1.90719 2.28138 2.09617 2.07001 2.3325C1.85425 2.57524 1.69359 2.86181 1.59908 3.17253C1.50458 3.48324 1.47845 3.81073 1.52251 4.1325C1.9302 7.2541 3.35641 10.154 5.58001 12.3825C7.80852 14.6061 10.7084 16.0323 13.83 16.44C13.9274 16.4474 14.0251 16.4474 14.1225 16.44C14.6756 16.4408 15.2096 16.2379 15.6225 15.87C15.8588 15.6586 16.0478 15.3997 16.1771 15.1102C16.3063 14.8206 16.3729 14.5071 16.3725 14.19V11.94C16.3685 11.4218 16.1856 10.9208 15.855 10.5218C15.5243 10.1228 15.066 9.85018 14.5575 9.75ZM14.925 14.25C14.9248 14.3547 14.9026 14.4581 14.86 14.5537C14.8174 14.6493 14.7552 14.7349 14.6775 14.805C14.5953 14.8799 14.4975 14.9356 14.3911 14.968C14.2848 15.0004 14.1725 15.0088 14.0625 14.9925C11.2637 14.627 8.66269 13.3515 6.66001 11.3625C4.65561 9.3581 3.36903 6.74803 3.00001 3.9375C2.98371 3.8275 2.99208 3.71525 3.02451 3.60889C3.05694 3.50252 3.11262 3.4047 3.18751 3.3225C3.25847 3.24386 3.34529 3.18115 3.44224 3.13849C3.5392 3.09583 3.64409 3.07419 3.75001 3.075H6.00001C6.17338 3.07076 6.34286 3.12674 6.47961 3.2334C6.61635 3.34006 6.71191 3.49081 6.75001 3.66C6.75001 3.8625 6.81751 4.0725 6.86251 4.275C6.94919 4.6679 7.0645 5.05393 7.20751 5.43L6.15751 5.925C5.97703 6.00785 5.83678 6.15889 5.76751 6.345C5.69249 6.5276 5.69249 6.7324 5.76751 6.915C6.84691 9.22707 8.70544 11.0856 11.0175 12.165C11.2001 12.24 11.4049 12.24 11.5875 12.165C11.7736 12.0957 11.9247 11.9555 12.0075 11.775L12.48 10.725C12.8669 10.8661 13.2628 10.9813 13.665 11.07C13.86 11.115 14.07 11.1525 14.2725 11.1825C14.4417 11.2206 14.5924 11.3162 14.6991 11.4529C14.8058 11.5896 14.8617 11.7591 14.8575 11.9325L14.925 14.25ZM10.5 1.5C10.3275 1.5 10.1475 1.5 9.97501 1.5C9.77609 1.51691 9.59205 1.61214 9.46335 1.76475C9.33465 1.91736 9.27185 2.11484 9.28876 2.31375C9.30566 2.51266 9.4009 2.69671 9.5535 2.82541C9.70611 2.95411 9.90359 3.01691 10.1025 3H10.5C11.6935 3 12.8381 3.47411 13.682 4.31802C14.5259 5.16193 15 6.30653 15 7.5C15 7.635 15 7.7625 15 7.8975C14.9834 8.09536 15.0459 8.29173 15.1738 8.44358C15.3018 8.59542 15.4847 8.69033 15.6825 8.7075H15.7425C15.9303 8.70826 16.1115 8.63858 16.2503 8.51221C16.3892 8.38584 16.4756 8.21199 16.4925 8.025C16.4925 7.8525 16.4925 7.6725 16.4925 7.5C16.4925 5.91 15.8614 4.38501 14.7378 3.26001C13.6142 2.13501 12.09 1.50199 10.5 1.5ZM12 7.5C12 7.69891 12.079 7.88968 12.2197 8.03033C12.3603 8.17098 12.5511 8.25 12.75 8.25C12.9489 8.25 13.1397 8.17098 13.2803 8.03033C13.421 7.88968 13.5 7.69891 13.5 7.5C13.5 6.70435 13.1839 5.94129 12.6213 5.37868C12.0587 4.81607 11.2957 4.5 10.5 4.5C10.3011 4.5 10.1103 4.57902 9.96968 4.71967C9.82902 4.86032 9.75001 5.05109 9.75001 5.25C9.75001 5.44891 9.82902 5.63968 9.96968 5.78033C10.1103 5.92098 10.3011 6 10.5 6C10.8978 6 11.2794 6.15804 11.5607 6.43934C11.842 6.72064 12 7.10218 12 7.5Z"
+                fill="#F5F5F5"
+              />
             </svg>
             71 2109-4949
           </li>
           <li>
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M14.25 3H3.75C3.15326 3 2.58097 3.23705 2.15901 3.65901C1.73705 4.08097 1.5 4.65326 1.5 5.25V12.75C1.5 13.3467 1.73705 13.919 2.15901 14.341C2.58097 14.7629 3.15326 15 3.75 15H14.25C14.8467 15 15.419 14.7629 15.841 14.341C16.2629 13.919 16.5 13.3467 16.5 12.75V5.25C16.5 4.65326 16.2629 4.08097 15.841 3.65901C15.419 3.23705 14.8467 3 14.25 3ZM13.9425 4.5L9.5325 8.91C9.46278 8.9803 9.37983 9.03609 9.28843 9.07417C9.19704 9.11225 9.09901 9.13185 9 9.13185C8.90099 9.13185 8.80296 9.11225 8.71157 9.07417C8.62017 9.03609 8.53722 8.9803 8.4675 8.91L4.0575 4.5H13.9425ZM15 12.75C15 12.9489 14.921 13.1397 14.7803 13.2803C14.6397 13.421 14.4489 13.5 14.25 13.5H3.75C3.55109 13.5 3.36032 13.421 3.21967 13.2803C3.07902 13.1397 3 12.9489 3 12.75V5.5575L7.41 9.9675C7.83188 10.3889 8.40375 10.6255 9 10.6255C9.59625 10.6255 10.1681 10.3889 10.59 9.9675L15 5.5575V12.75Z" fill="#F5F5F5"/>
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.25 3H3.75C3.15326 3 2.58097 3.23705 2.15901 3.65901C1.73705 4.08097 1.5 4.65326 1.5 5.25V12.75C1.5 13.3467 1.73705 13.919 2.15901 14.341C2.58097 14.7629 3.15326 15 3.75 15H14.25C14.8467 15 15.419 14.7629 15.841 14.341C16.2629 13.919 16.5 13.3467 16.5 12.75V5.25C16.5 4.65326 16.2629 4.08097 15.841 3.65901C15.419 3.23705 14.8467 3 14.25 3ZM13.9425 4.5L9.5325 8.91C9.46278 8.9803 9.37983 9.03609 9.28843 9.07417C9.19704 9.11225 9.09901 9.13185 9 9.13185C8.90099 9.13185 8.80296 9.11225 8.71157 9.07417C8.62017 9.03609 8.53722 8.9803 8.4675 8.91L4.0575 4.5H13.9425ZM15 12.75C15 12.9489 14.921 13.1397 14.7803 13.2803C14.6397 13.421 14.4489 13.5 14.25 13.5H3.75C3.55109 13.5 3.36032 13.421 3.21967 13.2803C3.07902 13.1397 3 12.9489 3 12.75V5.5575L7.41 9.9675C7.83188 10.3889 8.40375 10.6255 9 10.6255C9.59625 10.6255 10.1681 10.3889 10.59 9.9675L15 5.5575V12.75Z"
+                fill="#F5F5F5"
+              />
             </svg>
             top@topengenharia.com.br
           </li>
         </ul>
       </div>
-
     </footer>
+
+    <a id="backToTopButton" href="#home">
+      <svg
+        width="40"
+        height="40"
+        viewBox="0 0 40 40"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle cx="20" cy="20" r="20" fill="#ca2b2b" />
+        <path
+          d="M20 27V13"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M13 20L20 13L27 20"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </a>
 
     <div id="cookiePopup" class="hide">
       <!-- <img src="cookie.png" /> -->
       <p>
-        Conheça a nossa <a href="#">Política de privacidade.</a> de acordo com a Lei Geral de Proteção de Dados (LGPD).
+        Conheça a nossa <a href="#">Política de privacidade.</a> de acordo com a
+        Lei Geral de Proteção de Dados (LGPD).
       </p>
       <button id="acceptCookie">Fechar</button>
     </div>
 
-    <script src="/scripts/script.js"></script>
-
-
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/scripts/main.js"></script>
   </body>
 </html>
