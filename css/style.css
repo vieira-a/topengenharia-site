@@ -106,7 +106,6 @@ section header {
 }
 
 .card img {
-  width: 37.5rem;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
@@ -161,7 +160,7 @@ nav .wrapper {
 
 nav .logo {
   margin-top: 0rem;
-  width: 15%;
+  width: 12%;
 }
 
 nav.scroll {
@@ -293,7 +292,7 @@ body.menu-expanded button path {
 #home {
   padding-block: 0;
   /*padding-top: calc(4.1rem + var(--nav-height));*/
-  padding-top: var(--nav-height);
+  padding-top: calc(4.1rem + var(--nav-height));
 }
 
 .read-more {
@@ -322,14 +321,6 @@ body.menu-expanded button path {
   text-transform: uppercase;
   color: var(--white-f);
 }
-
-/*---------- VALORES SECTION ----------*/
-
-/* #valores .content header p {
-  margin-bottom: 18rem;
-} */
-
-/*---------- OBRAS SECTION ----------*/
 
 #obras {
   background-color: white;
@@ -396,6 +387,8 @@ footer .contato ul li {
   gap: 1rem;
 }
 
+/* BACK TO TOP BUTTON*/
+
 #backToTopButton {
   position: fixed;
   bottom: 1rem;
@@ -413,6 +406,8 @@ footer .contato ul li {
   visibility: visible;
   transform: translateY(0);
 }
+
+/* POPUP PRIVACY POLICY*/
 
 #cookiePopup {
   background-color: var(--white-f);
@@ -482,3 +477,120 @@ footer .contato ul li {
     bottom: 0;
   }
 }
+
+/* Layout to 1024px resolution*/
+@media (min-width: 1024px) {
+  body {
+    overflow: auto;
+  }
+
+  .wrapper {
+    width: min(112rem, 100%);
+    display: grid;
+  }
+
+  /*reset*/
+  nav#navigation .wrapper * {
+    margin: 0;
+    padding: 0;
+    visibility: initial;
+    display: initial;
+    opacity: initial;
+    flex-direction: initial;
+    position: initial;
+    font-size: initial;
+    font-weight: initial;
+    transform: initial;
+    color: initial;
+    background-color: initial;
+    filter: initial;
+  }
+
+  nav#navigation .close-menu,
+  nav#navigation .open-menu,
+  nav#navigation .social-links {
+    display: none;
+  }
+
+  nav#navigation {
+    height: calc(4.1rem + var(--nav-height));
+  }
+
+  nav#navigation .logo img {
+    width: 50%;
+    margin-left: 2.4rem;
+  }
+
+  nav#navigation .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+  }
+
+  nav#navigation .menu ul:nth-child(1) {
+    display: flex;
+    gap: 3.2rem;
+  }
+
+  nav#navigation .menu ul li a {
+    color: var(--main);
+    opacity: 0.7;
+  }
+
+  nav#navigation .menu a.button {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 2.4rem;
+
+    border: 1px solid var(--main);
+    border-radius: 4rem;
+    
+    color: var(--main);
+
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-transform: uppercase;
+  }
+
+  nav#navigation .menu a.button:hover {
+    background-color: var(--main);
+    border: none;
+
+    color: var(--white-f);
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.4rem;
+
+  }
+
+  #clientes ul {
+    display: flex;
+    flex-direction: row;
+
+    gap: 2.4rem;
+    justify-content: center;
+    
+  }
+
+  footer {
+    display: grid;
+    gap: 2.4rem;
+    grid-template-columns: 25% 25% 50%;
+    margin-inline: auto;
+  }
+
+  
+  footer iframe {
+    width: 60rem;
+    height: 30rem;
+
+  }
+  
+}
+
+

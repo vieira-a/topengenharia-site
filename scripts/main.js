@@ -37,10 +37,12 @@ ScrollReveal({
   duration: 700
 }).reveal(`
   #home,
-  #home img,
-  #valores,
-  #obras,
-  #clientes,
+  #valores header,
+  #valores card,
+  #obras header,
+  #obras card,
+  #clientes header,
+  #clientes li,
   #about,
   #about header,
   #about .content`)
