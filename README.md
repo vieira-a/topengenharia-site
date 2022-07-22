@@ -20,3 +20,5 @@ The image below, shows a website without responsiveness and without adaptation t
 <p>Design project developed by myself using Figma, under company approval.</p>
 <h2>Technologies used</h2>
 <p>HTML5, CSS3 and JavaScript to interactive and responsive menu.</p>
+<h2>Credits and permissions</h2>
+<p>The images contained in this document, as well as the description of the project are shown with due authorization from the company.</p>
